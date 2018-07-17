@@ -1,0 +1,72 @@
+// Mixin functions for easier styling
+
+// fonts
+@mixin sans-serif($font-weight: 400, $font-size: 16px, $transform: none) {
+  font-family: sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  text-transform: $transform;
+}
+
+@mixin font-family($font-weight: 400, $font-size: 16px, $transform: none) {
+  font-family: 'FontFamHere', sans-serif;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  text-transform: $transform;
+}
+
+// mega menu helpers
+@mixin mega-reset($col: 1, $gap: 0) {
+  -moz-column-count: $col;
+  -moz-column-gap: $gap;
+  -webkit-column-count: $col;
+  -webkit-column-gap: $gap;
+  column-count: $col;
+  column-gap: $gap;
+}
+
+@mixin mega($col: 3, $gap: 30px, $mega-width: 900px, $break: avoid) {
+  #nav {
+    ul {
+      -moz-column-count: $col;
+      -moz-column-gap: $gap;
+      -webkit-column-count: $col;
+      -webkit-column-gap: $gap;
+      column-count: $col;
+      column-gap: $gap;
+      width: $mega-width;
+      li {
+        display: block;
+        float: none;
+        -webkit-column-break-inside: $break;
+        page-break-inside: $break;
+        break-inside: $break;
+      }
+      ul {
+        display: block;
+        position: static;
+        top: 100%;
+        left: 0;
+        max-width: 100%;
+        -moz-column-count: 1;
+        -moz-column-gap: 0;
+        -webkit-column-count: 1;
+        -webkit-column-gap: 0;
+        column-count: 1;
+        column-gap: 0;
+      }
+    }
+  }
+}
+
+// shades with black
+@function shade($color, $percent) {
+  // should be used for things like shading colors of a button on hover
+  @return mix($black, $color, $percent);
+}
+
+// lightens with white
+@function lighten($color, $percent) {
+  // should be used for things like lightening colors of a button on hover
+  @return mix($white, $color, $percent);
+}

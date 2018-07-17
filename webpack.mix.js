@@ -12,5 +12,5 @@ mix.webpackConfig({
 });
 
 mix.js('source/_assets/js/main.js', 'js')
-    .sass('source/_assets/sass/main.scss', 'css/main.css')
+    .sass('source/_assets/sass/layout.scss', 'css/layout.css')
     .version();

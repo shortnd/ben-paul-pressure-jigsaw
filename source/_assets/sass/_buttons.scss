@@ -1,0 +1,95 @@
+/* -----------------------------------------
+#buttons
+-----------------------------------------*/
+.button,
+a.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  @include sans-serif(700, 12px, uppercase);
+  text-decoration: none;
+  line-height: normal;
+  vertical-align: top;
+  border: 0;
+  border-radius: 5px;
+  background: $btn-bg;
+  color: $btn-text;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.button:hover,
+a.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  background: shade($btn-bg, 10);
+  color: $btn-text;
+}
+
+.button:active,
+a.button:active,
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+.btn:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  background: shade($btn-bg, 10);
+}
+
+.button:visited,
+a.button:visited,
+button:visited,
+input[type="submit"]:visited,
+input[type="reset"]:visited,
+input[type="button"]:visited,
+.btn:visited {
+  background: $btn-bg;
+  color: $btn-text;
+}
+
+.button:focus,
+a.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+.btn:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  background: shade($btn-bg, 10);
+  color: $btn-text;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.btn-share-close {
+  background: $btn-share-close-bg;
+  color: $btn-share-close-color;
+  &:hover {
+    background: shade($btn-share-close-bg, 10);
+    color: $btn-share-close-color;
+  }
+}
