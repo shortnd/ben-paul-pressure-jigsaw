@@ -1,5 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-<h1>Site Currently Under Construction</h1>
+  <div class="container">
+    <h1 class="text-center">Site Currently Under Construction</h1>
+  </div>
 @endsection
