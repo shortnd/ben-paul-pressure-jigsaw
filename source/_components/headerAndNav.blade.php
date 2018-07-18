@@ -8,9 +8,9 @@
             <a href="mailto:email@email.com">email@email.com</a>
           </div><!--/.contact-info-wrapper-->
         </div><!--/.col-md-6-->
-        <div class="col-md-6 pull-right">
+        <div class="col-md-6 text-right">
           <a href="facebook.com" target="_blank"><i class="fa fa-facebook"></i><span class="sr-only">facebook link</span></a>
-        </div><!--/.col-md-6.pull-right-->
+        </div><!--/.col-md-6.text-right-->
       </div><!--/.row-->
     </div><!--/.container-->
   </div><!--/.top-bar-->
