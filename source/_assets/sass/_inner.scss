@@ -1,101 +1,12 @@
 /* -----------------------------------------
 #inner
 -----------------------------------------*/
-#flyout-toggle {
-  display: none;
-  float: right;
-  position: relative;
-  font-size: 20px;
-  color: $white;
-  z-index: 9;
-}
-#flyout {
-  margin: 0;
-  padding: 0;
-  a, span {
-    display: block;
-    padding: 15px 20px;
-    text-decoration: none;
-    border-bottom: 1px solid rgba($black, .2);
-    color: $white;
-    &:hover, &:focus {
-      color: $white;
-    }
-  }
-  li {
-    margin: 0;
-    display: block;
-    position: relative;
-    &:hover > ul {
-      display: block;
-    }
-    &:last-of-type {
-      a, span {
-        border: none;
-      }
-    }
-  }
-  ul {
-    display: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background: $black;
-    z-index: 9;
-    &.showUl {
-      display: block;
-    }
-    &.hideUL {
-      display: none;
-    }
-    a, span {
-      padding: 10px 15px;
-      font-size: 13px;
-      width: 200px;
-      &:hover, &:focus {}
-    }
-  }
-  .toggle {
-    display: none;
-    float: right;
-  }
-}
-
-.breadcrumbs {
-  @include sans-serif(400, 13px);
-  line-height: 1;
-  p {
-    margin: 0;
-    color: $black;
-  }
-  a {
-    text-decoration: none;
-    color: $black;
-    &:hover, &:focus, &:visited, &:active {
-      text-decoration: none;
-      color: $black;
-    }
-  }
-  span {
-    margin: 0 0;
-    color: $black;
-  }
-}
-
-// ALWAYS START HERE WITH NEW STYLES. ADJUST OTHER FILES AS NEEDED FOR DESIRED STYLES
-#main-content {
-  padding: 0;
-  background: $white;
-}
-
-.slider-inner {
-  position: relative;
-  height: 0;
-  background: $black;
-  z-index: 1;
-  .bx-controls {
-    display: none;
-  }
-}
+#flyout{margin:0;padding:0}
+#flyout li{margin:0;display:block;position:relative}
+#flyout a,#flyout span{text-decoration:none;padding:15px 20px;display:block;border-bottom:1px solid #000}
+#flyout ul{display:none;position:absolute;top:0;left:100%;margin:0;padding:0;background:#aaa}
+#flyout ul a,#flyout ul span{font-size:13px;padding:10px 15px;width:180px}
+#flyout li:hover>ul{display:block}
+#breadcrumbs{font-size:14px;color:#222}
+#breadcrumbs a{text-decoration:none;color:#222}
+#breadcrumbs a:after{content:'\f0da';font-family:FontAwesome}

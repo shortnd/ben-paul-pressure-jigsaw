@@ -1,19 +1,6 @@
 /* -----------------------------------------
 #links
 -----------------------------------------*/
-a, a:visited {
-  color: $links;
-  text-decoration: underline;
-  //-webkit-transition: color .3s ease, background .3s ease;
-  //-moz-transition: color .3s ease, background .3s ease;
-  //-o-transition: color .3s ease, background .3s ease;
-  //transition: color .3s ease, background .3s ease;
-}
-
-a:hover, a:focus {
-  color: lighten($links, 10);
-}
-
-p a, p a:visited {
-  line-height: inherit;
-}
+a,a:visited{color:#0f99ee;text-decoration:underline;-webkit-transition:color .3s ease;-moz-transition:color .3s ease;-o-transition:color .3s ease;transition:color .3s ease;-webkit-transition:background .3s ease;-moz-transition:background .3s ease;-o-transition:background .3s ease;transition:background .3s ease}
+a:focus,a:hover{color:#0f99ee}
+p a,p a:visited{line-height:inherit}

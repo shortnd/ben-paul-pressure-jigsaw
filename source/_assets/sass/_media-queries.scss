@@ -8,266 +8,59 @@ $mobile-portrait: 479px;
 /* -----------------------------------------
 #media queries
 -----------------------------------------*/
-
-// #MIN-WIDTH QUERIES
-// Mobile Landscape Size to Tablet Portrait (devices and browsers)
-@media only screen and (min-width: $mobile-portrait-before) and (max-width: $mobile) {}
-
-@media only screen and (min-width: $tablet-before) {
-  #nav, #flyout {
-    .toggle, .toggle2 {
-      display: none;
-    }
+@media only screen and (min-width:$tablet-before){
+  /*! for screen readers */
+  #flyout .focused .toggle,#nav .focused .toggle,#nav .focused .toggle2{display:inline-block;margin-left:8px}
+  #flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
+  /*! for mega-menu */
+  #nav>li>ul{column-count:3;-webkit-column-count:3;-moz-column-count:3;column-gap:30px;-webkit-column-gap:30px;-moz-column-gap:30px;position:absolute;left:0;right:0;top:100%;padding:30px;display:none}
+  #flyout,#nav{display:block!important}
+  /*! menu - other */
+  #nav li:hover>ul{display:block}
+  #nav li{display:inline-block}
+  /*! traditional dropdown menu */
+  /*!
+    #nav ul{background:#222;width:220px;position:absolute}
+    #nav ul a:hover,#nav ul span:hover{background:rgba(0,0,0,.15)}
+  */
+  
   }
-  .toggle, .toggle2, #nav-toggle, #search-toggle, #flyout-toggle {
-    display: none;
+  @media only screen and (max-width:$tablet){
+  /*! for edit forms */
+  #freeform #formwizziwmorf tr,#freeform #formwizziwmorf tr td{display:block!important}
+  #freeform #formwizziwmorf tr table tr{display:table-row!important}
+  #freeform #formwizziwmorf tr table td{display:table-cell!important}
+  /*! navigation toggles and arrows */
+  #toggles{position: absolute;right: 15px;top: 15px}
+  #search-toggle,#nav-toggle{font-size:20px;cursor: pointer;color:#fff;width:45px;line-height: 45px;border:1px solid rgba(255, 255, 255, .2);border-radius:4px;margin-left: 10px;text-align: center}
+  .down-arrow{display:none}
+  .toggle,.toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.15);height:45px;width:45px;line-height:45px;text-align:center;display:inline-block;cursor:pointer}
+  /*! navigation */
+  #nav{background:#222}
+  #nav li{list-style:none;position:relative}
+  #nav a,#nav span{padding:15px!important;border-bottom:1px solid rgba(0,0,0,.15);line-height:1;color:#fff;font-size:14px!important}
+  #nav ul{background:rgba(0,0,0,.15);display:none}
   }
-}
-
-@media only screen and (min-width: $desktop-before) {
-  // For Wider Page Designs
-  //.container {
-  //  width: 1200px; // whatever value reflects the design
-  //  max-width: 100%; // fail-safe
-  //}
-}
-
-
-
-
-
-// #MAX-WIDTH QUERIES
-@media only screen and (max-width: $desktop) {}
-
-@media only screen and (max-width: $tablet) {
-
-  // nav
-  .toggle, .toggle2, #nav-toggle, #search-toggle, #flyout-toggle {
-    display: inline-block;
-    cursor: pointer;
+  /*! All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width:$mobile){
+  .floating-alert{width:auto;right:0;left:0;border:0;bottom:0;border-radius:0;padding-left:15px;padding-right:15px}
+  .floating-alert{font-size:12px}
+  .floating-alert h6{margin-bottom:10px;font-size:14px}
+  .floating-alert .btn{font-size:10px;padding:7px 12px!important}
+  .share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
+  .share-btns i{display:block;line-height:50px!important;font-size:20px}
   }
-
-  #nav-toggle, #search-toggle {
-    font-size: 20px;
-    color: $white;
+  /*! Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width:$mobile-portrait-before) and (max-width:$mobile){
+  /*! Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  
   }
-  #nav-toggle {
-    margin: 0 -15px 0 0;
-    padding: 0 15px;
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 1px;
-      height: 100%;
-      background: rgba($black, .2);
-    }
+  /*! Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width:$mobile-portrait){
+  /*! Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  
   }
-  #search-toggle {
-    margin: 0;
-    padding: 0 15px;
+  @media print{
+  #breadcrumbs,#flyout-wrap,.e-notify,header{display:none!important}
+  a[href]:after{content:none!important}
   }
-
-  #nav {
-    display: none;
-    float: none;
-    margin: 0 -15px;
-    background: $mobile-nav-bg;
-    transition: margin .2s ease-in-out;
-    clear: both;
-    a, span {
-      padding: 20px 15px;
-      font-size: 14px;
-      line-height: 1;
-      text-align: left;
-      border-top: 1px solid rgba($black, .2);
-      background: none;
-      color: $black;
-      &:hover, &:focus {
-        color: $black;
-      }
-    }
-    li {
-      display: block;
-      float: none;
-      position: relative;
-      &:hover > ul {
-        display: none;
-      }
-      li:hover > a {
-        background: none;
-      }
-    }
-    ul {
-      padding: 0;
-      position: static;
-      top: 0;
-      width: auto;
-      @include mega-reset();
-      background: shade($mobile-nav-bg, 20);
-      a, span {
-        margin: 0;
-        padding: 20px 25px;
-        width: 100%;
-        background: none;
-        color: $black;
-        &:hover, &:focus {
-          color: $black;
-        }
-      }
-      ul {
-        display: none;
-        margin: 0;
-        padding: 0;
-        left: 0;
-        background: shade($mobile-nav-bg, 40);
-        a, span {
-          margin: 0;
-          padding: 20px 35px;
-          background: none;
-          color: $black;
-          &:hover, &:focus {
-            color: $black;
-          }
-        }
-      }
-    }
-    .toggle, .toggle2 {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 55px;
-      height: 55px;
-      text-align: center;
-      line-height: 55px;
-      background: rgba(0, 0, 0, .2);
-    }
-  }
-
-  #flyout {
-    display:none;
-    margin: 0;
-    padding: 0;
-    a, span {
-      padding: 20px 15px;
-      font-size: 14px;
-      line-height: 1;
-      border-bottom: 1px solid rgba(0, 0, 0, .2);
-      background: none;
-    }
-    li {
-      padding: 0;
-      &:hover > ul {
-        display: none;
-      }
-    }
-    ul {
-      position: static;
-      left: 0;
-      padding: 0;
-      background:rgba(0,0,0,.2);
-      a, span {
-        padding: 20px 30px;
-        width:100%;
-      }
-    }
-    .toggle {
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 55px;
-      height: 55px;
-      text-align: center;
-      line-height: 55px;
-      background: rgba(0, 0, 0, .2);
-    }
-  }
-
-  footer {
-    .text-right {
-      text-align: left;
-    }
-  }
-
-  /* rz form tables - without page scope this targets edit forms and makes
- * editing confusing
- */
-  #freeform {
-    #formwizziwmorf {
-      tr {
-        display: block !important;
-        td {
-          display: block !important;
-        }
-        table {
-          tr {
-            display: table-row !important;
-          }
-          td {
-            display: table-cell !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-// All Mobile Sizes (devices and browser)
-@media only screen and (max-width: $mobile) {
-  .floating-alert {
-    padding-left: 15px;
-    padding-right: 15px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: auto;
-    font-size: 12px;
-    border-radius: 0;
-    border: 0;
-    h4 {
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
-    .btn {
-      padding: 7px 12px !important;
-      font-size: 10px;
-    }
-  }
-  .share-btns {
-    a {
-      padding: 10px;
-      width: 100%;
-      height: auto;
-      font-size: 12px;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    i {
-      display: block;
-      font-size: 20px;
-      line-height: 50px !important;
-    }
-  }
-  .floating-share-btn {
-    top: auto;
-    bottom: 15px;
-    right: 15px;
-    border-radius: 50%;
-    box-shadow: 0 0 40px 0 rgba($black, .4);
-  }
-}
-
-// Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
-@media only screen and (max-width: $mobile-portrait) {}
-
-@media print {
-  .nav-wrap, .sidebar, #flyout-wrap, .breadcrumbs, .e-notify {
-    display: none !important;
-  }
-  a[href]:after {
-    content: none !important;
-  }
-}

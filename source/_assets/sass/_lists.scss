@@ -1,61 +1,10 @@
 /* -----------------------------------------
 #lists
 -----------------------------------------*/
-// first level
-ul, ol {
-  margin: 0 0 20px 10px;
-}
-
-ul {
-  list-style: disc;
-}
-
-ol {
-  list-style :decimal;
-}
-
-// first level
-ul {
-  // second level
-  ul {
-    margin: 4px 0 5px 30px;
-    li {
-      margin-bottom: 6px;
-    }
-  }
-  // second level
-  ol {
-    margin: 4px 0 5px 30px;
-    li {
-      margin-bottom: 6px;
-    }
-  }
-} // end ul
-
-// first level
-ol {
-  // second level
-  ol {
-    margin: 4px 0 5px 30px;
-    li {
-      margin-bottom: 6px;
-    }
-  }
-
-  // second level
-  ul {
-    margin: 4px 0 5px 30px;
-    li {
-      margin-bottom: 6px;
-    }
-  }
-} // end ol
-
-
-li {
-  line-height: 1.3;
-  margin-bottom: 7px;
-  p {
-    line-height: 1.3;
-  }
-}
+ol,ul{margin-bottom:20px;margin-left:10px}
+ul{list-style:disc}
+ol{list-style:decimal}
+ol ol,ol ul,ul ol,ul ul{margin:4px 0 5px 30px}
+ol ol li,ol ul li,ul ol li,ul ul li{margin-bottom:6px}
+li{line-height:1.3;margin-bottom:7px}
+li p{line-height:1.3}

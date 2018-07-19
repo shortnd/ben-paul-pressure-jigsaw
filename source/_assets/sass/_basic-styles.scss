@@ -1,12 +1,22 @@
 /* -----------------------------------------
 #basic styles
 -----------------------------------------*/
+// body{
+//   @include sans-serif(400, 16px); // use instead of above syntax
+//   line-height: 1.6;
+//   background: $white; // don't touch
+//   color: $text;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-text-size-adjust: 100%;
+// }
 body{
-  @include sans-serif(400, 16px); // use instead of above syntax
-  line-height: 1.6;
-  background: $white; // don't touch
-  color: $text;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  background:$white;
+  font-size:16px;
+  line-height:1.6;
+  font-family:sans-serif;
+  color:$text;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-text-size-adjust:100%;
 }

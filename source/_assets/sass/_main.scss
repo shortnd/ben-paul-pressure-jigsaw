@@ -1,47 +1,87 @@
 /* -----------------------------------------
 #main
 -----------------------------------------*/
-.top-bar{
-  background:lightsteelblue;
-  font-size:12px;
-  a{
+
+.container {
+  max-width: 1170px;
+  width: 100%
+}
+
+.top-bar {
+  background: lightsteelblue;
+  font-size: 12px;
+  a {
     color: $black;
     text-decoration: none;
     padding: 6px;
-    display:inline-block;
-    &:hover{
-      color:$white;
+    display: inline-block;
+    &:hover {
+      color: $white;
     }
   }
 }
-#logo{
+
+#logo {
   text-decoration: none;
   padding: 5px 0;
   display: inline-block;
-  h1{
+  h1 {
     font-size: 20px;
     margin: 0;
-    display:inline-block;
     border-bottom: 1px solid $black;
   }
   h2 {
     font-size: 18px;
     margin: 0;
-    display:inline-block;
   }
 }
-.bottom-bar{
+
+.bottom-bar {
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, .2);
 }
-body{overflow-x:hidden}
-.text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.toggle,.toggle2{display:none}
-#calendarEvent{left:0;max-height:500px;overflow-y:auto;margin:0 auto}
-header{position:relative;z-index:200}
+
+body {
+  overflow-x: hidden
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.toggle,
+.toggle2 {
+  display: none
+}
+
+#calendarEvent {
+  left: 0;
+  max-height: 500px;
+  overflow-y: auto;
+  margin: 0 auto
+}
+
+header {
+  position: relative;
+  z-index: 200
+}
+
 /*! SKIP */
-#skip{position:fixed;top:150px;left:-100%;transition: all .3s ease-in}
-#skip:focus{left:200px}
+
+#skip {
+  position: fixed;
+  top: 150px;
+  left: -100%;
+  transition: all .3s ease-in
+}
+
+#skip:focus {
+  left: 200px
+}
+
 /*! traditional dropdown menu */
+
 /*!
 #nav{padding:0;margin:0}
 #nav li{position:relative;margin:0}
@@ -52,10 +92,94 @@ header{position:relative;z-index:200}
 #nav ul a,#nav ul span{padding:15px 25px;font-size:16px;border-bottom:1px solid rgba(0,0,0,.15);color:#fff}
 #nav li:last-child>*{border:0}
 */
+
 /*! for mega menu */
-#nav{padding:0;margin:0;position:relative}
-#nav a,#nav span{display:block;text-decoration:none;font-size:18px;padding:20px 15px;color:#222}
-#nav li{margin:0;display:inline-block;}
-#nav ul{padding:0;margin:0}
-#nav ul a,#nav ul span{padding:0}
-#nav ul li{display:block}
+
+#nav {
+  padding: 0;
+  margin: 0;
+  position: relative
+}
+
+#nav a,
+#nav span {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 15px;
+  color: #222
+}
+
+#nav li {
+  margin: 0
+}
+
+#nav ul {
+  padding: 0;
+  margin: 0
+}
+
+#nav ul a,
+#nav ul span {
+  padding: 0
+}
+
+#nav ul li {
+  display: block
+}
+
+/*! helper classes */
+
+.pos-a {
+  position: absolute
+}
+
+.pos-r {
+  position: relative
+}
+
+.pos-s {
+  position: static
+}
+
+.pos-f {
+  position: fixed
+}
+
+/*! removes styling from the translate */
+
+#google-translate .goog-te-gadget-simple {
+  border: 0
+}
+
+#google-translate .goog-te-menu-value {
+  margin: 0
+}
+
+#google-translate .goog-te-menu-value>* {
+  display: none
+}
+
+#google-translate .goog-te-menu-value>span:first-of-type {
+  display: block;
+  font-size: 0
+}
+
+/*! for adding an icon before the alternate text */
+
+#google-translate .goog-te-menu-value>span:first-of-type:before {
+  content: '\f0ac';
+  font-size: 14px;
+  font-family: FontAwesome
+}
+
+/*! for changing the text in the translate */
+
+#google-translate .goog-te-menu-value>span:first-of-type:after {
+  content: 'Translate';
+  font-size: 14px
+}
+
+#google-translate img {
+  display: none
+}
