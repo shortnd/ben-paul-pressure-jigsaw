@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-  <div class="container">
+  <div class="container" style="display:flex; justify-content: center; align-items: center;">
     <h1 class="text-center">Site Currently Under Construction</h1>
     <ul>
       <li>
