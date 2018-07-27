@@ -3,7 +3,7 @@
 -----------------------------------------*/
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%
 }
 
@@ -39,6 +39,43 @@
 
 .bottom-bar {
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, .2);
+}
+.latest-jobs-before-and-afters {
+  .btn {
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    background: lightsteelblue;
+    color: #0d0d0d!important;
+  }
+}
+.latest-jobs {
+  .owl-stage {
+    padding: 15px 0;
+  }
+}
+.latest-job {
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, .2);
+  .img {
+    float:left;
+    width:50%;
+    height:200px;
+    border-radius: 4px 4px 0 0;
+  }
+  .text {
+    padding: 15px;
+    border-radius: 0 0 4px 4px;
+    h3{
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+    a {
+      display:block;
+      float: right;
+    }
+  }
 }
 
 body {

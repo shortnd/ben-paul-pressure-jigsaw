@@ -49,7 +49,7 @@
 			e.preventDefault();
 			$('#main').focus();
 		});
-		
+
 		// Keyboard Navigation: Nav, flyout
 		var isClick = false;
 		$("#nav li a, #flyout  li a, a, button, .toggle, .toggle2").on('focusin', function(e) {
@@ -68,10 +68,10 @@
 		$("#nav a,#flyout a").on('mousedown',function(){
 			isClick = true;
 		});
-		
+
 		// If template is freeform, add flyout background and position the main tag relative
 		if ($('#flyout-wrap').length){
-			$('main').css({ 
+			$('main').css({
 				// The freeform template should always have a main tag wrapping the flyout-wrap and the entry
 				'position':'relative',
 				'z-index':'1'
@@ -85,7 +85,8 @@
 				'background':'#000' // change background-color of flyout-background here
 			});
 		}
-		
+
+
 		// Fill sides script
 		function fillSide(){
             var windowWidth = $('body').outerWidth();
@@ -93,7 +94,7 @@
 			$('.fillLeft').css({
 				'margin-left': -pixelValue
 			});
-			
+
 			$('.fillRight').css({
 				'margin-right': -pixelValue
 			});
@@ -101,37 +102,16 @@
 				'margin-left': -pixelValue,
 				'padding-left': pixelValue
 			});
-			
+
 			$('.fillRight.withPadding').css({
 				'margin-right': -pixelValue,
 				'padding-right': pixelValue
 			});
-			
+
 			$('#flyout-background').width($('#flyout-wrap').outerWidth());
 		}
         fillSide();
         $window.resize(fillSide);
-
-		/*
-		* E-Notify Auto submit
-		*/
-		$.urlParam=function(n){var e=new RegExp("[?&]"+n+"=([^]*)").exec(window.location.href);return null==e?null:e[1]||0};
-		var $enotify = $('iframe[src*="/revize/plugins/notify/notify.jsp"]');
-		if( $enotify.length > 0 ){
-			var emailStr = $.urlParam("email");
-			if( emailStr != null ){
-				$enotify.attr("src", $enotify.attr("src") + "&email=" + emailStr);
-			}
-		}
-
-		// RZ Class
-		if(typeof RZ !== "undefined"){
-		 if(RZ.login){
-		  $body.addClass("user-logged-in");
-		 } else{
-			 $body.addClass("user-not-logged-in");
-		 }
-		}
 
 		// Search Toggle
 		$('#search-toggle').on('click',function(e){
@@ -193,22 +173,6 @@
 	      }
 	    });
 
-	    //collapse nav if left
-	    $(".desktop *").focus(function(e){
-    		var $opened = $(".opened");
-    		var $opened2 = $(".opened2");
-	    	if( $opened.length > 0 || $opened2.length > 0 ) {
-		    	if( $(".opened :focus").length < 1 ){
-		    		$opened.children("ul").slideUp();
-		    		$opened.removeClass("opened");
-		    		$(".opened2").removeClass("opened2");
-		    	}
-		    	if( $(".opened2 :focus").length < 1 ){
-		    		$opened2.children("ul").slideUp();
-		    		$opened2.removeClass("opened2");
-		    	}
-		    }
-	    });
 		// Flyout
 		var flyout = $('#flyout'),
 			flyoutwrap = $('#flyout-wrap');
@@ -224,30 +188,8 @@
 
 		$("#flyout ul").addClass('flyout-children');
 
-		var flyoutChildren = $('.flyout-children');
+		// var flyoutChildren = $('.flyout-children');
 
-		// revizeWeather
-		if( typeof $.fn.revizeWeather !== "undefined" ){
-			$.fn.revizeWeather({
-				zip: '48326',
-				city_name: '',
-				unit: 'f',
-				success: function(weather) {
-					var date = new Date();
-					date = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
-					var html = '<span>'+date+'</span> <span class="forecast">'+weather.temp+'&deg; '+weather.forecast+'</span>';
-					html += '<i class="'+weather.icon+'"></i>';
-
-					$("#weather").html(html);
-				},
-				error: function(error) {
-					// better to just hide the secion if there is an error
-					$('.weather').hide();
-					console.log(error);
-				}
-			});
-		}
-		
 
 		// Tabs
 		$('#tabs li a').click(function(e){
@@ -262,7 +204,11 @@
 
 		// Owl Slider
 		if(typeof $.fn.owlCarousel !== "undefined"){
-			$("#owl-slider").owlCarousel();
+			// $("#owl-slider").owlCarousel();
+			$('.latest-jobs').owlCarousel({
+				items: 3,
+				margin: 15,
+			});
 		}
 
 		// matchHeight
@@ -387,7 +333,7 @@
 
 		};
 		$('.v-align').flexVerticalCenter();
-		
+
 	}); // Ready
 
 })(jQuery);

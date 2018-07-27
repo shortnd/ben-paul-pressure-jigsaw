@@ -358,7 +358,7 @@ legend span {
 -----------------------------------------*/
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -388,6 +388,7 @@ legend span {
   font-size: 20px;
   margin: 0;
   border-bottom: 1px solid #000;
+  text-align: center;
 }
 
 #logo h2 {
@@ -398,6 +399,48 @@ legend span {
 .bottom-bar {
   -webkit-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.latest-jobs-before-and-afters .btn {
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  background: lightsteelblue;
+  color: #0d0d0d !important;
+}
+
+.latest-jobs .owl-stage {
+  padding: 15px 0;
+}
+
+.latest-job {
+  -webkit-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.latest-job .img {
+  float: left;
+  width: 50%;
+  height: 200px;
+  border-radius: 4px 4px 0 0;
+}
+
+.latest-job .text {
+  padding: 15px;
+  border-radius: 0 0 4px 4px;
+}
+
+.latest-job .text h3 {
+  margin: 0;
+}
+
+.latest-job .text p {
+  margin: 0;
+}
+
+.latest-job .text a {
+  display: block;
+  float: right;
 }
 
 body {
@@ -628,6 +671,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100;
 }
 
 .slider-caption h2 {
@@ -705,7 +749,7 @@ header {
   height: 32px;
   margin: -20px 0 0;
   display: block;
-  background: url(/images/slider-nav.png) no-repeat 0 0;
+  background: url(/assets/images/slider-nav.png) no-repeat 0 0;
   position: absolute;
   z-index: 51;
   top: 50%;
