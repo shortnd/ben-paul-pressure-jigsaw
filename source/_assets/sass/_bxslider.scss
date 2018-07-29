@@ -21,6 +21,15 @@
     color: #fff;
   }
 }
+#slider-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  z-index: 60;
+  background:rgba(0, 0, 0, .3);
+}
 .bx-viewport,.bx-wrapper,.bxslider,.bxslider li{height:100%!important}
 .bx-wrapper{position:relative;margin:0;padding:0;*zoom:1;overflow:hidden}
 .bxslider{margin:0;padding:0}
