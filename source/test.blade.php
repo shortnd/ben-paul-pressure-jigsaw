@@ -30,7 +30,7 @@
       <div class="container">
         <h2 class="text-center">Latest Jobs</h2>
         <div class="latest-jobs">
-          @forelse ($latest_jobs as $latest_job)
+          @forelse ($latest_jobs->slice(0, 3) as $latest_job)
             <div class="latest-job">
               <div class="before-after-imgs clearfix">
                 <div class="img" style="background:url('{{ $page->assets_prefix }}{{ $latest_job->before_pic }}') center no-repeat; background-size:cover"></div>

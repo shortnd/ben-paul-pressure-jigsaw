@@ -5,7 +5,9 @@ return [
     'production' => false,
     'assets_prefix' => '/',
     'collections' => [
-      'latest_jobs',
+      'latest_jobs' => [
+        'sort' => '-date'
+      ],
       'about',
     ],
     'email' => 'email@email.com',
