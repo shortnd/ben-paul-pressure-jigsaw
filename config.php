@@ -9,6 +9,9 @@ return [
         'sort' => '-date'
       ],
       'about',
+      'services' => [
+        'sort' => 'sequence'
+      ]
     ],
     'email' => 'email@email.com',
     'telephone' => '313-313-3311',

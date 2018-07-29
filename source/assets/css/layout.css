@@ -487,23 +487,14 @@ header {
 
 /*! traditional dropdown menu */
 
-/*!
-#nav{padding:0;margin:0}
-#nav li{position:relative;margin:0}
-#nav a,#nav span{display:block;text-decoration:none;font-size:18px;padding:20px 15px;color:#222}
-#nav ul{padding:0;margin:0;left:0;top:100%;display:none}
-#nav ul li{display:block}
-#nav ul ul{left:100%;top:0}
-#nav ul a,#nav ul span{padding:15px 25px;font-size:16px;border-bottom:1px solid rgba(0,0,0,.15);color:#fff}
-#nav li:last-child>*{border:0}
-*/
-
-/*! for mega menu */
-
 #nav {
   padding: 0;
   margin: 0;
+}
+
+#nav li {
   position: relative;
+  margin: 0;
 }
 
 #nav a,
@@ -515,23 +506,37 @@ header {
   color: #222;
 }
 
-#nav li {
-  margin: 0;
-}
-
 #nav ul {
   padding: 0;
   margin: 0;
-}
-
-#nav ul a,
-#nav ul span {
-  padding: 0;
+  left: 0;
+  top: 100%;
+  display: none;
+  text-align: left;
 }
 
 #nav ul li {
   display: block;
 }
+
+#nav ul ul {
+  left: 100%;
+  top: 0;
+}
+
+#nav ul a,
+#nav ul span {
+  padding: 15px 25px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+#nav li:last-child > * {
+  border: 0;
+}
+
+/*! for mega menu */
 
 /*! helper classes */
 
@@ -811,26 +816,6 @@ header {
 
   /*! for mega-menu */
 
-  #nav > li > ul {
-    column-count: 3;
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-gap: 30px;
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    padding: 30px;
-    display: none;
-  }
-
-  #flyout,
-  #nav {
-    display: block !important;
-  }
-
   /*! menu - other */
 
   #nav li:hover > ul {
@@ -843,10 +828,27 @@ header {
 
   /*! traditional dropdown menu */
 
-  /*!
-    #nav ul{background:#222;width:220px;position:absolute}
-    #nav ul a:hover,#nav ul span:hover{background:rgba(0,0,0,.15)}
-  */
+  #nav ul {
+    width: 220px;
+    position: absolute;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    z-index: 60;
+    background-color: white;
+  }
+
+  #nav ul a:hover,
+  #nav ul span:hover {
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  #nav ul a {
+    color: #000;
+  }
+
+  .fa.fa-angle-down.down-arrow {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -922,6 +924,7 @@ header {
     line-height: 1;
     color: #fff;
     font-size: 14px !important;
+    text-align: left !important;
   }
 
   #nav ul {

@@ -15,6 +15,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
+            <h2>Mission Statement</h2>
             <p>
               {{ $page->mission_statement }}
             </p>

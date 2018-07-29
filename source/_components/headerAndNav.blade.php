@@ -38,6 +38,13 @@
               </li>
               <li>
                 <a href="/services">Services</a>
+                <ul>
+                  @foreach ($services as $service)
+                    <li>
+                      <a href="{{$service->getPath()}}">{{$service->title}}</a>
+                    </li>
+                  @endforeach
+                </ul>
               </li>
               <li>
                 <a href="/contact">Contact</a>

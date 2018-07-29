@@ -13,17 +13,16 @@ $mobile-portrait: 479px;
   #flyout .focused .toggle,#nav .focused .toggle,#nav .focused .toggle2{display:inline-block;margin-left:8px}
   #flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
   /*! for mega-menu */
-  #nav>li>ul{column-count:3;-webkit-column-count:3;-moz-column-count:3;column-gap:30px;-webkit-column-gap:30px;-moz-column-gap:30px;position:absolute;left:0;right:0;top:100%;padding:30px;display:none}
-  #flyout,#nav{display:block!important}
+  // #nav>li>ul{column-count:3;-webkit-column-count:3;-moz-column-count:3;column-gap:30px;-webkit-column-gap:30px;-moz-column-gap:30px;position:absolute;left:0;right:0;top:100%;padding:30px;display:none}
+  // #flyout,#nav{display:block!important}
   /*! menu - other */
   #nav li:hover>ul{display:block}
   #nav li{display:inline-block}
   /*! traditional dropdown menu */
-  /*!
-    #nav ul{background:#222;width:220px;position:absolute}
-    #nav ul a:hover,#nav ul span:hover{background:rgba(0,0,0,.15)}
-  */
-  
+  #nav ul{width:220px;position:absolute;box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);z-index: 60;background-color: white}
+  #nav ul a:hover,#nav ul span:hover{background:rgba(0,0,0,.15)}
+  #nav ul a{color: #000;}
+  .fa.fa-angle-down.down-arrow{display:none}
   }
   @media only screen and (max-width:$tablet){
   /*! for edit forms */
@@ -38,7 +37,7 @@ $mobile-portrait: 479px;
   /*! navigation */
   #nav{background:#222}
   #nav li{list-style:none;position:relative}
-  #nav a,#nav span{padding:15px!important;border-bottom:1px solid rgba(0,0,0,.15);line-height:1;color:#fff;font-size:14px!important}
+  #nav a,#nav span{padding:15px!important;border-bottom:1px solid rgba(0,0,0,.15);line-height:1;color:#fff;font-size:14px!important;text-align:left!important}
   #nav ul{background:rgba(0,0,0,.15);display:none}
   }
   /*! All Mobile Sizes (devices and browser) */
@@ -53,12 +52,12 @@ $mobile-portrait: 479px;
   /*! Mobile Landscape Size to Tablet Portrait (devices and browsers) */
   @media only screen and (min-width:$mobile-portrait-before) and (max-width:$mobile){
   /*! Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-  
+
   }
   /*! Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width:$mobile-portrait){
   /*! Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-  
+
   }
   @media print{
   #breadcrumbs,#flyout-wrap,.e-notify,header{display:none!important}
