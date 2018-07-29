@@ -3,9 +3,11 @@
 return [
     'baseUrl' => '',
     'production' => false,
+    'assets_prefix' => '/',
     'collections' => [
       'latest_jobs',
-      'about'
+      'about',
+      'test'
     ],
     'email' => 'email@email.com',
     'telephone' => '313-313-3311',

@@ -33,8 +33,8 @@
           @forelse ($latest_jobs as $latest_job)
             <div class="latest-job">
               <div class="before-after-imgs clearfix">
-                <div class="img" style="background:url('../{{ $latest_job->before_pic }}') center no-repeat; background-size:cover"></div>
-                <div class="img" style="background:url('../{{ $latest_job->after_pic }}') center no-repeat; background-size:cover"></div>
+                <div class="img" style="background:url('{{ $page->assets_prefix }}{{ $latest_job->before_pic }}') center no-repeat; background-size:cover"></div>
+                <div class="img" style="background:url('{{ $page->assets_prefix }}{{ $latest_job->after_pic }}') center no-repeat; background-size:cover"></div>
               </div><!--/.before-after-imgs.clearfix-->
               <div class="text clearfix">
                 <h3>{{$latest_job->title}}</h3>
@@ -51,16 +51,4 @@
         </div><!--/.text-center-->
       </div><!--/.container-->
     </section><!--/.latest-jobs-before-and-afters-->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 copyright">
-            <span>&copy; Copyright Benjamin Pauls 2018</span>
-          </div><!--/.col-md-6-->
-          <div class="col-md-6 link-back-login text-right">
-            <span id="shortnd">Developed &amp Designed by <a href="https://shortnd.design" target="_blank">Collin O.</a></span> | <a href="#">Login</a>
-          </div><!--/.col-md-6.link-back-login.text-right-->
-        </div><!--/.row-->
-      </div><!--/.container-->
-    </footer>
 @endsection

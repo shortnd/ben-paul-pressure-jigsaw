@@ -4,8 +4,8 @@
     <h2>{{$page->title}}</h2>
     <h3>{{$page->date}}</h3>
     <hr />
-    <img src="../../{{$page->before_pic}}" alt="{{$page->before_after_pic_desc}}">
-    <img src="../../{{$page->after_pic}}" alt="{{$page->before_after_pic_desc}}" />
+    <img src="{{ $page->assets_prefix }}{{$page->before_pic}}" alt="{{$page->before_after_pic_desc}}">
+    <img src="{{ $page->assets_prefix }}{{$page->after_pic}}" alt="{{$page->before_after_pic_desc}}" />
     <p>
       {{$page->description}}
     </p>
