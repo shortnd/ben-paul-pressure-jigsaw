@@ -22,7 +22,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <a href="/test" id="logo">
+          <a href="/" id="logo">
             <h1>Benjamin Paul's</h1>
             <h2>Pressure Washing</h2>
           </a><!--/#logo-->
@@ -31,7 +31,7 @@
           <nav>
             <ul id="nav">
               <li>
-                <a href="/test">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="/about">About</a>

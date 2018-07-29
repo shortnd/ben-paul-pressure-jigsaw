@@ -7,7 +7,6 @@ return [
     'collections' => [
       'latest_jobs',
       'about',
-      'test'
     ],
     'email' => 'email@email.com',
     'telephone' => '313-313-3311',
