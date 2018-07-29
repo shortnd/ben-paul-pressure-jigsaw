@@ -12,7 +12,9 @@
     </head>
     <body>
         @include('_components.headerAndNav')
-        @yield('body')
+        <div class="container">
+          @yield('body')
+        </div>
 
         <script src="/assets/js/jquery.min.js"></script>
         <script src="/assets/plugins/owl.carousel/owl-carousel/owl.carousel.min.js"></script>

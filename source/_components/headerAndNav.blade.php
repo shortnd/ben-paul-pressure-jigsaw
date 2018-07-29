@@ -9,7 +9,7 @@
         <div class="col-md-6">
           <div class="contact-info-wrapper">
           <a href="tel:+1{{ $page->telephone }}">{{ $page->telephone }}</a>
-          <a href="mailto:{{$page->email}}">{{ $page->email }}</a>
+          <a href="mailto:{{ $page->email }} ">{{ $page->email }}</a>
           </div><!--/.contact-info-wrapper-->
         </div><!--/.col-md-6-->
         <div class="col-md-6 text-right">

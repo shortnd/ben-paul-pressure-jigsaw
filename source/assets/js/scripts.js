@@ -205,8 +205,9 @@
 		// Owl Slider
 		if(typeof $.fn.owlCarousel !== "undefined"){
 			// $("#owl-slider").owlCarousel();
+			var latestJobsLength = $('.latest-jobs .latest-job').length;
 			$('.latest-jobs').owlCarousel({
-				items: 3,
+				items: latestJobsLength > 3 ? 3 : latestJobsLength,
 				margin: 15,
 			});
 		}

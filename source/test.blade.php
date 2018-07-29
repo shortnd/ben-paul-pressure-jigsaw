@@ -6,8 +6,8 @@
       </ul>
       <div class="slider-caption">
         <div class="container text-center">
-          <h2>Benjamin Pauls Pressure Washing</h2>
-          <h3>Servicing St. Clair Shore, Grosse Point, Harper Woods, Sterling Hights and More...</h3>
+          <h2>{{ $page->slide_caption }}</h2>
+          <h3>{{ $page->slide_sub_caption }}</h3>
         </div><!--/.container.text-center-->
       </div><!--/.slider-caption-->
     </section><!--/#slider-->
@@ -16,11 +16,12 @@
         <div class="row">
           <div class="col-md-8">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus illo eaque reprehenderit, tempora similique corporis ipsum? Expedita exercitationem inventore nihil. Ullam totam sit eum tempore quae sunt dolores, consectetur quisquam.
+              {{ $page->mission_statement }}
             </p>
           </div><!--/.col-md-8-->
           <div class="col-md-4">
             <h2>Contact Me</h2>
+            <a href="/contact">Contact</a>
           </div><!--/.col-md-4-->
         </div><!--/.row-->
       </div><!--/.contaienr-->
@@ -29,48 +30,24 @@
       <div class="container">
         <h2 class="text-center">Latest Jobs</h2>
         <div class="latest-jobs">
-          <div class="latest-job">
-            <div class="before-after-imgs clearfix">
-              <div class="img" style="background:url('/assets/images/dirt.jpg') center no-repeat;background-size:cover"></div>
-              <div class="img" style="background:url('/assets/images/water-clean.jpg') center no-repeat;background-size:cover"></div>
-            </div><!--/.before-after-imgs.clearfix-->
-            <div class="text clearfix">
-              <h3>Job Name</h3>
-              <p>
-                Small quick summary of the job. Something that you would like to share quickly
-              </p>
-              <a href="#">Read More</a>
-            </div><!--/.text.clearfix-->
-          </div><!--/.latest-job-->
-          <div class="latest-job">
-            <div class="before-after-imgs clearfix">
-              <div class="img" style="background:url('/assets/images/dirt.jpg') center no-repeat;background-size:cover"></div>
-              <div class="img" style="background:url('/assets/images/water-clean.jpg') center no-repeat;background-size:cover"></div>
-            </div><!--/.before-after-imgs.clearfix-->
-            <div class="text clearfix">
-              <h3>Job Name</h3>
-              <p>
-                Small quick summary of the job. Something that you would like to share quickly
-              </p>
-              <a href="#">Read More</a>
-            </div><!--/.text.clearfix-->
-          </div><!--/.latest-job-->
-          <div class="latest-job">
-            <div class="before-after-imgs clearfix">
-              <div class="img" style="background:url('/assets/images/dirt.jpg') center no-repeat;background-size:cover"></div>
-              <div class="img" style="background:url('/assets/images/water-clean.jpg') center no-repeat;background-size:cover"></div>
-            </div><!--/.before-after-imgs.clearfix-->
-            <div class="text clearfix">
-              <h3>Job Name</h3>
-              <p>
-                Small quick summary of the job. Something that you would like to share quickly
-              </p>
-              <a href="#">Read More</a>
-            </div><!--/.text.clearfix-->
-          </div><!--/.latest-job-->
-        </div><!--/.latest-jobs-->
+          @forelse ($latest_jobs as $latest_job)
+            <div class="latest-job">
+              <div class="before-after-imgs clearfix">
+                <div class="img" style="background:url('../{{ $latest_job->before_pic }}') center no-repeat; background-size:cover"></div>
+                <div class="img" style="background:url('../{{ $latest_job->after_pic }}') center no-repeat; background-size:cover"></div>
+              </div><!--/.before-after-imgs.clearfix-->
+              <div class="text clearfix">
+                <h3>{{$latest_job->title}}</h3>
+                <p>{{$latest_job->description}}</p>
+                <a href="{{$latest_job->getPath()}}">Read More</a>
+              </div>
+            </div>
+          @empty
+            <h3>There are currently no jobs posted</h3>
+          @endforelse
+        </div>
         <div class="text-center">
-          <a href="#" class="btn">View All Jobs</a>
+          <a href="/latest-jobs" class="btn">View All Jobs</a>
         </div><!--/.text-center-->
       </div><!--/.container-->
     </section><!--/.latest-jobs-before-and-afters-->
