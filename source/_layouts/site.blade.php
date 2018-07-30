@@ -19,5 +19,6 @@
 <script src="/assets/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
 <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="/assets/js/scripts.js"></script>
+        <script src="/assets/js/main.js"></script>
     </body>
 </html>

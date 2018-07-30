@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="/assets/css/layout.css">
+        <script src="/assets/js/main.js"></script>
     </head>
     <body>
         @include('_components.headerAndNav')
