@@ -1,8 +1,5 @@
 <header>
   <a href="#main" id="skip" tabindex="0">SKIP TO CONTENT</a>
-  <div id="toggles" class="hidden-lg hidden-xl hidden-md">
-    <div class="fa fa-bars" id="nav-toggle"></div>
-  </div><!--/#toggles-->
   <div class="top-bar">
     <div class="container">
       <div class="row">
@@ -19,6 +16,9 @@
     </div><!--/.container-->
   </div><!--/.top-bar-->
   <div class="bottom-bar">
+    <div id="toggles" class="hidden-lg hidden-xl hidden-md">
+      <div class="fa fa-bars" id="nav-toggle"></div>
+    </div><!--/#toggles-->
     <div class="container">
       <div class="row">
         <div class="col-md-3">

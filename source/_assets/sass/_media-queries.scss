@@ -12,9 +12,6 @@ $mobile-portrait: 479px;
   /*! for screen readers */
   #flyout .focused .toggle,#nav .focused .toggle,#nav .focused .toggle2{display:inline-block;margin-left:8px}
   #flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
-  /*! for mega-menu */
-  // #nav>li>ul{column-count:3;-webkit-column-count:3;-moz-column-count:3;column-gap:30px;-webkit-column-gap:30px;-moz-column-gap:30px;position:absolute;left:0;right:0;top:100%;padding:30px;display:none}
-  // #flyout,#nav{display:block!important}
   /*! menu - other */
   #nav li:hover>ul{display:block}
   #nav li{display:inline-block}
@@ -25,19 +22,21 @@ $mobile-portrait: 479px;
   .fa.fa-angle-down.down-arrow{display:none}
   }
   @media only screen and (max-width:$tablet){
+  .top-bar a{display:block}
+  .top-bar .text-right{text-align:left}
   /*! for edit forms */
   #freeform #formwizziwmorf tr,#freeform #formwizziwmorf tr td{display:block!important}
   #freeform #formwizziwmorf tr table tr{display:table-row!important}
   #freeform #formwizziwmorf tr table td{display:table-cell!important}
   /*! navigation toggles and arrows */
-  #toggles{position: absolute;right: 15px;top: 15px}
-  #search-toggle,#nav-toggle{font-size:20px;cursor: pointer;color:#fff;width:45px;line-height: 45px;border:1px solid rgba(255, 255, 255, .2);border-radius:4px;margin-left: 10px;text-align: center}
+  #toggles{position: absolute;right: 15px;top: 5px;z-index:200}
+  #search-toggle,#nav-toggle{font-size:20px;cursor: pointer;color:000;width:45px;line-height: 45px;border:1px solid rgba(0, 0, 0, .2);border-radius:4px;margin-left: 10px;text-align: center}
   .down-arrow{display:none}
   .toggle,.toggle2{position:absolute;right:0;top:0;background:rgba(0,0,0,.15);height:45px;width:45px;line-height:45px;text-align:center;display:inline-block;cursor:pointer}
   /*! navigation */
-  #nav{background:#222}
+  #nav{display:none}
   #nav li{list-style:none;position:relative}
-  #nav a,#nav span{padding:15px!important;border-bottom:1px solid rgba(0,0,0,.15);line-height:1;color:#fff;font-size:14px!important;text-align:left!important}
+  #nav a,#nav span{padding:15px!important;border-bottom:1px solid rgba(0,0,0,.15);line-height:1;color:#000;font-size:14px!important;text-align:left!important}
   #nav ul{background:rgba(0,0,0,.15);display:none}
   }
   /*! All Mobile Sizes (devices and browser) */
