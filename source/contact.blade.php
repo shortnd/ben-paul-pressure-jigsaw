@@ -12,16 +12,16 @@
     </div>
     <div class="form-group"><label for="content">Content</label><textarea class="form-control" id="content" name="content" type="text"></textarea></div>
     <div id="estimate">
-      <span @click="show">{[ message ]}</span>
+      <span @click="show">@{{ message }}</span>
       <div v-if="showEstimate" class="estimate">
         <label for="length">Length: <sub>In feet</sub> <input class="form-control" type="number" name="length" id="length" v-model.number="estimate.length" placeholder="0" /></label>
         <label for="width">Width: <sub>In feet</sub> <input class="form-control" type="number" name="width" id="width" v-model.number="estimate.width" placeholder="0" /></label>
         <br>
-        <label for="Percentage">Percentage: {[ estimate.percentage * 100]}% ~ {[ estimate.highPercentage * 100 ]}%</label>
+        <label for="Percentage">Percentage: @{{ estimate.percentage * 100}}% ~ @{{ estimate.highPercentage * 100 }}%</label>
         <br>
         <sub>* Percentage may vary depending on job and equipment needed</sub>
         <br>
-        <h3>Estimated Total: ${[ round(realTotal) ]} ~ ${[ round(highTotal) ]}</h3>
+        <h3>Estimated Total: $@{{ round(realTotal) }} ~ $@{{ round(highTotal) }}</h3>
       </div><!--/.estimate-->
     </div><!--/#estimate-->
     <button class="btn btn-primary" type="submit" name="submit">Submit</button>
@@ -29,7 +29,6 @@
   </form>
   <script>
   new Vue({
-    delimiters: ["{[","]}"],
     data: {
       message: 'Show Estimate Calculator +',
       showEstimate: false,
