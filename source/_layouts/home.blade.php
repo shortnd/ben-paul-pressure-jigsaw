@@ -42,7 +42,7 @@
             </div><!--/.before-after-imgs.clearfix-->
             <div class="text clearfix">
               <h3>{{$latest_job->title}}</h3>
-              <p>{{ $page->excerpt($latest_job->description) }}</p>
+              <p>{{ $latest_job->description }}</p>
               <a href="{{$latest_job->getPath()}}">Read More</a>
             </div>
           </div>
