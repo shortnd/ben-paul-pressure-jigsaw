@@ -16,5 +16,7 @@ return [
     ],
     'email' => 'email@email.com',
     'telephone' => '313-313-3311',
-    'facebook_link' => 'facebook.com'
+    'facebook_link' => 'facebook.com',
+    'percentage' => '.45',
+    'highPercentage' => '.60'
 ];

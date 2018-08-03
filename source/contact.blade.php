@@ -24,7 +24,6 @@
         <br>
         <h3>Estimated Total: ${{ round(realTotal) }} ~ ${{ round(highTotal) }}</h3>
         @endverbatim
-
       </div><!--/.estimate-->
     </div><!--/#estimate-->
     <button class="btn btn-primary" type="submit" name="submit">Submit</button>
@@ -38,8 +37,8 @@
       estimate : {
         length: 0,
         width: 0,
-        percentage: .45,
-        highPercentage: .60,
+        percentage: {{ $page->percentage }},
+        highPercentage: {{ $page->highPercentage }},
       }
     },
     computed: {
