@@ -11,8 +11,23 @@
         <link rel="stylesheet" href="/assets/css/layout.css">
         <script src="/assets/js/main.js"></script>
     </head>
-    <body>
+    <body id="inner">
         @include('_components.headerAndNav')
+        <section id="slider">
+          <ul class="bxslider">
+            @if ($page->slides)
+              @foreach ($page->slides as $slide)
+                <li style="background:url('{{$page->assets_prefix}}{{ $slide }}') center no-repeat;background-size:cover"></li>
+              @endforeach
+            @endif
+          </ul>
+          <div class="slider-caption">
+            <div class="container text-center">
+              <h2>{{ $page->title}}</h2>
+            </div><!--/.container.text-center-->
+          </div><!--/.slider-caption-->
+          <div id="slider-overlay"></div>
+        </section><!--/#slider-->
         <div class="container">
           @yield('body')
         </div>

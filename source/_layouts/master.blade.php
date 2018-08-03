@@ -7,7 +7,7 @@
         <title>Benjamin Paul Pressure Washing</title>
         <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/assets/css/layout.css">
+        <link rel="stylesheet" href="{{ mix('css/layout.css', 'assets')}}">
     </head>
     <body>
         @yield('body')

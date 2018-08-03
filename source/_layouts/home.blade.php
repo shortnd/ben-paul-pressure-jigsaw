@@ -14,6 +14,7 @@
     </div><!--/.slider-caption-->
     <div id="slider-overlay"></div>
   </section><!--/#slider-->
+  <main id="main" tabindex="-1">
   <section class="mission-statement">
     <div class="container">
       <div class="row">
@@ -23,9 +24,10 @@
             {{ $page->mission_statement }}
           </p>
         </div><!--/.col-md-8-->
-        <div class="col-md-4">
-          <h2>Contact Me</h2>
-          <a href="/contact">Contact</a>
+        <div class="col-md-4 estimate">
+          <h2>Estimate</h2>
+          <a class="btn" href="/estimate">Estimate</a>
+          <a class="btn" href="/contact">Contact</a>
         </div><!--/.col-md-4-->
       </div><!--/.row-->
     </div><!--/.contaienr-->
@@ -42,7 +44,7 @@
             </div><!--/.before-after-imgs.clearfix-->
             <div class="text clearfix">
               <h3>{{$latest_job->title}}</h3>
-              <p>{{ $latest_job->description }}</p>
+              <p>{{ str_limit($latest_job->description, $limit = 100, $end = '...') }}</p>
               <a href="{{$latest_job->getPath()}}">Read More</a>
             </div>
           </div>
@@ -55,4 +57,5 @@
       </div><!--/.text-center-->
     </div><!--/.container-->
   </section><!--/.latest-jobs-before-and-afters-->
+</main>
 @endsection

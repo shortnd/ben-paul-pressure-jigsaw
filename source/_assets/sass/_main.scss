@@ -2,21 +2,29 @@
 #main
 -----------------------------------------*/
 
+$blue-darkest: #12283a;
+$blue-darker: #1c3d5a;
+$blue-dark: #2779bd;
+$blue: #3490dc;
+$blue-light: #6cb2eb;
+$blue-lighter: #bcdefa;
+$blue-lightest: #eff8ff;
+
 .container {
   max-width: 1200px;
   width: 100%
 }
 
 .top-bar {
-  background: lightsteelblue;
+  background: $blue-lighter;
   font-size: 12px;
   a {
-    color: $black;
+    color: $blue-darkest;
     text-decoration: none;
     padding: 6px;
     display: inline-block;
     &:hover {
-      color: $white;
+      color: #004173;
     }
   }
 }
@@ -25,6 +33,7 @@
   text-decoration: none;
   padding: 5px 0;
   display: inline-block;
+  color: $blue-darkest;
   h1 {
     font-size: 20px;
     margin: 0;
@@ -41,13 +50,43 @@
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, .2);
   position: relative;
 }
+
+.mission-statement {
+  padding: 15px 0;
+  h2 {
+    font-weight: 600;
+    color: $blue-darkest;
+  }
+  .estimate {
+    .btn {
+      display:block;
+      background: $blue-darker;
+      color: $blue-lightest;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+  }
+}
 .latest-jobs-before-and-afters {
+  padding: 0 0 30px;
+  background: $blue-lightest;
+  h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $blue-darkest;
+  }
   .btn {
     border-radius: 4px;
     padding: 10px;
+    margin-top: 15px;
     font-size: 14px;
-    background: lightsteelblue;
-    color: #0d0d0d!important;
+    background: $blue-lighter;
+    color: $blue-darkest!important;
+    &:hover, &:focus {
+      background: $blue-darker;
+      color: $blue-lighter!important;
+    }
   }
 }
 .latest-jobs {
@@ -58,6 +97,7 @@
 .latest-job {
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, .2);
   margin-right: 15px;
+  background: #fff;
   .img {
     float:left;
     width:50%;
@@ -76,6 +116,36 @@
     a {
       display:block;
       float: right;
+      color: $blue-dark;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+}
+
+footer {
+  padding: 15px 0;
+  background: $blue-darker;
+  color: $blue-lighter;
+  a {
+    color: $blue-lightest!important;
+    text-decoration: none!important;
+    font-weight: 600;
+  }
+}
+
+.service {
+  display:flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  .img-wrap {
+    width: 25%;
+  }
+  .about-service{
+    display:flex;
+    flex-direction: column;
+    .text, .description, a {
+      display:block;
     }
   }
 }
@@ -113,7 +183,11 @@ header {
   position: fixed;
   top: 150px;
   left: -100%;
-  transition: all .3s ease-in
+  transition: all .3s ease-in;
+  padding: 15px 20px;
+  background: $blue-darkest;
+  color: $blue-lightest;
+  z-index: 100;
 }
 
 #skip:focus {

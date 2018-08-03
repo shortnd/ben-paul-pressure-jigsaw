@@ -363,25 +363,26 @@ legend span {
 }
 
 .top-bar {
-  background: lightsteelblue;
+  background: #bcdefa;
   font-size: 12px;
 }
 
 .top-bar a {
-  color: #000;
+  color: #12283a;
   text-decoration: none;
   padding: 6px;
   display: inline-block;
 }
 
 .top-bar a:hover {
-  color: #fff;
+  color: #004173;
 }
 
 #logo {
   text-decoration: none;
   padding: 5px 0;
   display: inline-block;
+  color: #12283a;
 }
 
 #logo h1 {
@@ -402,12 +403,48 @@ legend span {
   position: relative;
 }
 
+.mission-statement {
+  padding: 15px 0;
+}
+
+.mission-statement h2 {
+  font-weight: 600;
+  color: #12283a;
+}
+
+.mission-statement .estimate .btn {
+  display: block;
+  background: #1c3d5a;
+  color: #eff8ff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.latest-jobs-before-and-afters {
+  padding: 0 0 30px;
+  background: #eff8ff;
+}
+
+.latest-jobs-before-and-afters h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #12283a;
+}
+
 .latest-jobs-before-and-afters .btn {
   border-radius: 4px;
   padding: 10px;
+  margin-top: 15px;
   font-size: 14px;
-  background: lightsteelblue;
-  color: #0d0d0d !important;
+  background: #bcdefa;
+  color: #12283a !important;
+}
+
+.latest-jobs-before-and-afters .btn:hover,
+.latest-jobs-before-and-afters .btn:focus {
+  background: #1c3d5a;
+  color: #bcdefa !important;
 }
 
 .latest-jobs .owl-stage {
@@ -418,6 +455,7 @@ legend span {
   -webkit-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.2);
   margin-right: 15px;
+  background: #fff;
 }
 
 .latest-job .img {
@@ -443,6 +481,51 @@ legend span {
 .latest-job .text a {
   display: block;
   float: right;
+  color: #2779bd;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer {
+  padding: 15px 0;
+  background: #1c3d5a;
+  color: #bcdefa;
+}
+
+footer a {
+  color: #eff8ff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.service .img-wrap {
+  width: 25%;
+}
+
+.service .about-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.service .about-service .text,
+.service .about-service .description,
+.service .about-service a {
+  display: block;
 }
 
 body {
@@ -480,6 +563,10 @@ header {
   left: -100%;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
+  padding: 15px 20px;
+  background: #12283a;
+  color: #eff8ff;
+  z-index: 100;
 }
 
 #skip:focus {
@@ -663,6 +750,10 @@ header {
   position: relative;
 }
 
+#inner #slider {
+  height: 200px;
+}
+
 .slider-caption {
   position: absolute;
   top: 0;
@@ -683,12 +774,15 @@ header {
 
 .slider-caption h2 {
   margin: 0;
-  color: #fff;
+  color: #eff8ff;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
 .slider-caption h3 {
   margin: 0;
-  color: #fff;
+  color: #eff8ff;
 }
 
 #slider-overlay {
@@ -698,7 +792,7 @@ header {
   right: 0;
   bottom: 0;
   z-index: 60;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .bx-viewport,

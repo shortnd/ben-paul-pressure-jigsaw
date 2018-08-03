@@ -18,5 +18,8 @@ return [
     'telephone' => '313-313-3311',
     'facebook_link' => 'facebook.com',
     'percentage' => '.45',
-    'highPercentage' => '.60'
+    'highPercentage' => '.60',
+    'slides' => [
+      'assets/images/slide-1.jpg'
+    ]
 ];

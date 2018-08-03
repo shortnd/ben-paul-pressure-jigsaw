@@ -1,5 +1,5 @@
+<a href="#main" id="skip" tabindex="0">SKIP TO CONTENT</a>
 <header>
-  <a href="#main" id="skip" tabindex="0">SKIP TO CONTENT</a>
   <div class="top-bar">
     <div class="container">
       <div class="row">

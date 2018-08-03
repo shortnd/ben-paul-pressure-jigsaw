@@ -2,6 +2,7 @@
 #bxslider
 -----------------------------------------*/
 #slider{height:350px;position:relative}
+#inner #slider{height:200px}
 .slider-caption{
   position: absolute;
   top: 0;
@@ -14,11 +15,14 @@
   z-index: 100;
   h2 {
     margin:0;
-    color: #fff;
+    color: $blue-lightest;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
   }
   h3 {
     margin: 0;
-    color: #fff;
+    color: $blue-lightest;
   }
 }
 #slider-overlay{
@@ -28,7 +32,7 @@
   right: 0;
   bottom:0;
   z-index: 60;
-  background:rgba(0, 0, 0, .3);
+  background:rgba(0, 0, 0, .6);
 }
 .bx-viewport,.bx-wrapper,.bxslider,.bxslider li{height:100%!important}
 .bx-wrapper{position:relative;margin:0;padding:0;*zoom:1;overflow:hidden}
