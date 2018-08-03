@@ -8,8 +8,8 @@ This site is built with Jigsaw which uses Blade Templating language and is style
       - Make it stick to bottom if height is not past bottom of window
   [x] - Make Slides for show on each page w/out requireing them be in each file
     * might be able to just make a few in config.php and then override on pages optional
+  [ ] - Style Services page and posibly add to home page
   [ ] - Try to get it so able to edit phone email and facebook
 
 ## Silver
   [ ] - Vue store for estimate
-  [ ] -
