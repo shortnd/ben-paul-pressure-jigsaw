@@ -921,6 +921,10 @@ header {
 
   /*! menu - other */
 
+  #nav {
+    display: block !important;
+  }
+
   #nav li:hover > ul {
     display: block;
   }

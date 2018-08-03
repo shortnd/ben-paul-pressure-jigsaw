@@ -13,7 +13,9 @@
           <h2>{{ $service->title }}</h2>
         </div><!--/.title-->
         <div class="description">
-          <p>{{ str_limit($service->description, $limit=100, $end="...") }}</p>
+          <p>
+            {{ str_limit(strip_tags($service->getContent()), $limit = 75, $end ="...") }}
+          </p>
         </div>
         <a href="{{ $service->getPath()}}">View Service</a>
       </div>

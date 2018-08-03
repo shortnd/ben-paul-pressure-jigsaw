@@ -21,5 +21,5 @@ return [
     'highPercentage' => '.60',
     'slides' => [
       'assets/images/slide-1.jpg'
-    ]
+    ],
 ];
