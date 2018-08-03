@@ -13,6 +13,7 @@ $mobile-portrait: 479px;
   #flyout .focused .toggle,#nav .focused .toggle,#nav .focused .toggle2{display:inline-block;margin-left:8px}
   #flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
   /*! menu - other */
+  #nav{display:block!important}
   #nav li:hover>ul{display:block}
   #nav li{display:inline-block}
   /*! traditional dropdown menu */
