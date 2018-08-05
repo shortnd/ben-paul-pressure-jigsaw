@@ -69,7 +69,7 @@
             <div class="text">
               <h3>{{ $service->title }}</h3>
               <p>{{ strip_tags($service->getContent()) }}</p>
-              <a href="{{$service->getPath()}}">{{$service->title}}</a>
+              <a href="{{$service->getPath()}}">View {{$service->title}} Service</a>
             </div><!--/.text-->
           </div><!--/.service-card-->
         @empty

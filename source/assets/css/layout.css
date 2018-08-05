@@ -637,7 +637,7 @@ footer {
   float: right;
 }
 
-#page {
+#main {
   padding-bottom: 60px;
 }
 
@@ -711,12 +711,92 @@ footer a {
   margin: 0;
 }
 
+.service .about-service a {
+  display: block;
+  color: #2779bd;
+  text-decoration: none;
+  font-weight: 700;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.owl-nav {
+  padding-bottom: 20px;
+}
+
+.owl-nav .owl-prev {
+  position: absolute;
+  left: 0;
+  color: #1c3d5a;
+}
+
+.owl-nav .owl-next {
+  position: absolute;
+  right: 0;
+  color: #1c3d5a;
+}
+
 .service:last-of-type {
   border-bottom: 0;
 }
 
 #inner img {
   margin-bottom: 30px;
+}
+
+#contact label {
+  font-size: 16px;
+}
+
+#contact .form-control {
+  color: #12283a;
+}
+
+#contact textarea {
+  resize: none;
+}
+
+#contact .btn {
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+#contact .btn-primary {
+  background: #1c3d5a;
+  color: #bcdefa;
+  border: 1px solid #1c3d5a;
+}
+
+#contact .btn-primary:hover,
+#contact .btn-primary:focus {
+  background: #bcdefa;
+  color: #1c3d5a !important;
+}
+
+#contact .btn-danger {
+  background: #cc1f1a;
+  color: #fff;
+  border: 1px solid #cc1f1a;
+}
+
+#contact .btn-danger:hover,
+#contact .btn-danger:focus {
+  background: #fff;
+  color: #cc1f1a !important;
+}
+
+#contact #estimate span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact #estimate .show {
+  color: #cc1f1a;
+}
+
+#estimate-section h2 {
+  margin: 0;
+  font-size: 20px;
 }
 
 body {
@@ -1261,7 +1341,7 @@ header {
     padding: 15px !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     line-height: 1;
-    color: #000;
+    color: #12283a !important;
     font-size: 14px !important;
     text-align: left !important;
   }
@@ -1271,8 +1351,36 @@ header {
     display: none;
   }
 
+  .top-bar a {
+    padding: 3px 0;
+  }
+
+  .top-bar .text-right {
+    text-align: left !important;
+  }
+
   .service .img-wrap {
     display: none;
+  }
+
+  .latest-jobs-before-and-afters .btn {
+    width: 100%;
+  }
+
+  .latest-services-wrap .btn {
+    width: 100%;
+  }
+
+  #estimate-section h2 span {
+    display: block;
+  }
+
+  footer {
+    text-align: center !important;
+  }
+
+  footer .text-right {
+    text-align: center !important;
   }
 }
 
@@ -1286,6 +1394,14 @@ header {
 
 @media only screen and (max-width: 479px) {
   /*! Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+  .slider-caption h2 {
+    font-size: 32px;
+  }
+
+  .slider-caption h3 {
+    font-size: 24px;
+  }
 }
 
 @media print {

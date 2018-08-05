@@ -10,6 +10,14 @@ $blue-light: #6cb2eb;
 $blue-lighter: #bcdefa;
 $blue-lightest: #eff8ff;
 
+$red-darkest: #3b0d0c;
+$red-darker: #621b18;
+$red-dark: #cc1f1a;
+$red: #e3342f;
+$red-light: #ef5753;
+$red-lighter: #f9acaa;
+$red-lightest: #fcebea;
+
 html,body {
   height: 100%;
 }
@@ -226,7 +234,7 @@ footer {
     float:right;
   }
 }
-#page {
+#main {
   padding-bottom: 60px;
 }
 
@@ -273,6 +281,26 @@ footer {
     h2 {
       margin: 0;
     }
+    a {
+      display:block;
+      color: $blue-dark;
+      text-decoration: none;
+      font-weight: 700;
+      align-self: flex-end;
+    }
+  }
+}
+.owl-nav{
+  padding-bottom: 20px;
+  .owl-prev {
+    position:absolute;
+    left: 0;
+    color: $blue-darker;
+  }
+  .owl-next {
+    position: absolute;
+    right: 0;
+    color: $blue-darker;
   }
 }
 .service:last-of-type {
@@ -281,6 +309,56 @@ footer {
 
 #inner img {
   margin-bottom: 30px;
+}
+
+#contact {
+  label {
+    font-size: 16px;
+  }
+  .form-control{
+    color: $blue-darkest;
+  }
+  textarea {
+    resize: none;
+  }
+  .btn {
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+  .btn-primary {
+    background: $blue-darker;
+    color: $blue-lighter;
+    border: 1px solid $blue-darker;
+    &:hover, &:focus{
+      background: $blue-lighter;
+      color:$blue-darker!important;
+    }
+  }
+  .btn-danger {
+    background: $red-dark;
+    color: $white;
+    border: 1px solid $red-dark;
+    &:hover, &:focus {
+      background: $white;
+      color: $red-dark!important;
+    }
+  }
+  #estimate {
+    span {
+      display:block;
+      margin-bottom: 10px;
+    }
+    .show {
+      color: $red-dark;
+    }
+  }
+}
+
+#estimate-section {
+  h2 {
+    margin: 0;
+    font-size: 20px;
+  }
 }
 
 body {

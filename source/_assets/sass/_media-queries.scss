@@ -24,12 +24,6 @@ $mobile-portrait: 479px;
   }
   /*! All Mobile Sizes (devices and browser) */
   @media only screen and (max-width:$mobile){
-  .floating-alert{width:auto;right:0;left:0;border:0;bottom:0;border-radius:0;padding-left:15px;padding-right:15px}
-  .floating-alert{font-size:12px}
-  .floating-alert h6{margin-bottom:10px;font-size:14px}
-  .floating-alert .btn{font-size:10px;padding:7px 12px!important}
-  .share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
-  .share-btns i{display:block;line-height:50px!important;font-size:20px}
   .top-bar a{display:block}
   .top-bar .text-right{text-align:left}
   /*! navigation toggles and arrows */
@@ -40,23 +34,56 @@ $mobile-portrait: 479px;
   /*! navigation */
   #nav{display:none}
   #nav li{list-style:none;position:relative}
-  #nav a,#nav span{padding:15px!important;border-bottom:1px solid rgba(0,0,0,.15);line-height:1;color:#000;font-size:14px!important;text-align:left!important}
+  #nav a,#nav span{padding:15px!important;border-bottom:1px solid rgba(0,0,0,.15);line-height:1;color:$blue-darkest!important;font-size:14px!important;text-align:left!important}
   #nav ul{background:rgba(0,0,0,.15);display:none}
+  .top-bar{
+    a {
+      padding: 3px 0;
+    }
+    .text-right {
+      text-align: left!important;
+    }
+  }
   .service {
     .img-wrap{
       display:none;
     }
   }
+  .latest-jobs-before-and-afters {
+    .btn {
+      width: 100%;
+    }
   }
-  /*! Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-  @media only screen and (min-width:$mobile-portrait-before) and (max-width:$mobile){
-  /*! Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-
+  .latest-services-wrap {
+    .btn {
+      width: 100%;
+    }
+  }
+  #estimate-section {
+    h2 {
+      span {
+        display:block;
+      }
+    }
+  }
+  footer {
+    text-align: center!important;
+    .text-right {
+      text-align: center!important;
+    }
+  }
   }
   /*! Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width:$mobile-portrait){
   /*! Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-
+  .slider-caption {
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+  }
   }
   @media print{
   #breadcrumbs,#flyout-wrap,.e-notify,header{display:none!important}

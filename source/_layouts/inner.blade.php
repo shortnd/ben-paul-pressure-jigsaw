@@ -29,9 +29,9 @@
           <div id="slider-overlay"></div>
         </section><!--/#slider-->
         <div class="container">
-          <section id="page">
+          <main tabindex="-1" id="main">
             @yield('body')
-          </section><!--/#page-->
+          </main><!--/#page-->
         </div>
         @include('_components.footer')
         <script src="/assets/js/jquery.min.js"></script>

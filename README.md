@@ -9,7 +9,7 @@ This site is built with Jigsaw which uses Blade Templating language and is style
   - [x] Make Slides for show on each page w/out requireing them be in each file
     * might be able to just make a few in config.php and then override on pages optional
   - [x] Style Services page and possibly add to home page
-  - [ ] Try to get it so able to edit phone email and facebook
 
 ## Silver
   - [ ] Vue store for estimate
+  - [ ] Netlify CMS

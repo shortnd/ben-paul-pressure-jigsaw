@@ -1,7 +1,9 @@
+---
+title: Contact
+---
 @extends('_layouts.inner')
 @section('body')
-  <h2>Contact Me</h2>
-  <form>
+  <form id="contact">
     <div class="form-group">
       <label for="name">Name</label>
       <input class="form-control" type="text" name="name" id="name">
@@ -10,10 +12,10 @@
       <label for="email">Email</label>
       <input class="form-control" type="email" name="email" id="email">
     </div>
-    <div class="form-group"><label for="content">Content</label><textarea class="form-control" id="content" name="content" type="text"></textarea></div>
+    <div class="form-group"><label for="content">Content</label><textarea class="form-control" id="content" name="content" type="text" rows="5" cols="50"></textarea></div>
     <div id="estimate">
       @verbatim
-      <span @click="show">{{ message }}</span>
+      <span @click="show" v-bind:class="{ show: showEstimate }">{{ message }}</span>
       <div v-if="showEstimate" class="estimate">
         <label for="length">Length: <sub>In feet</sub> <input class="form-control" type="number" name="length" id="length" v-model.number="estimate.length" placeholder="0" /></label>
         <label for="width">Width: <sub>In feet</sub> <input class="form-control" type="number" name="width" id="width" v-model.number="estimate.width" placeholder="0" /></label>
