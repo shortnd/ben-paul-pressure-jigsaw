@@ -57,5 +57,29 @@
       </div><!--/.text-center-->
     </div><!--/.container-->
   </section><!--/.latest-jobs-before-and-afters-->
+  <section class="latest-services-wrap">
+    <div class="container">
+      <h2 class="text-center">Latest Services</h2>
+      <div class="latest-services">
+        @forelse ($services as $service)
+          <div class="service-card">
+            @if ($service->post_img)
+              <div class="card-img" style="background:url('{{$page->assets_prefix}}{{$service->post_img}}') center no-repeat;background-size:cover;"></div>
+            @endif
+            <div class="text">
+              <h3>{{ $service->title }}</h3>
+              <p>{{ strip_tags($service->getContent()) }}</p>
+              <a href="{{$service->getPath()}}">{{$service->title}}</a>
+            </div><!--/.text-->
+          </div><!--/.service-card-->
+        @empty
+          <h3>There are currently no services posted</h3>
+        @endforelse
+      </div><!--/.latest-services-->
+      <div class="text-center">
+        <a class="btn" href="/services">View All Services</a>
+      </div><!--/.text-center-->
+    </div><!--/.container-->
+  </section><!--/.latest-services-->
 </main>
 @endsection

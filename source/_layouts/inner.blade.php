@@ -23,17 +23,18 @@
           </ul>
           <div class="slider-caption">
             <div class="container text-center">
-              <h2>{{ $page->title}}</h2>
+              <h2>{{ $page->title }}</h2>
             </div><!--/.container.text-center-->
           </div><!--/.slider-caption-->
           <div id="slider-overlay"></div>
         </section><!--/#slider-->
         <div class="container">
-          @yield('body')
+          <section id="page">
+            @yield('body')
+          </section><!--/#page-->
         </div>
         @include('_components.footer')
         <script src="/assets/js/jquery.min.js"></script>
-        <script src="/assets/plugins/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
 <script src="/assets/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
 <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="/assets/js/scripts.js"></script>

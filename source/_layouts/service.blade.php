@@ -1,10 +1,7 @@
-@extends('_layouts.site')
+@extends('_layouts.inner')
 @section('body')
-  <div class="container">
-    <h2>{{ $page->title }}</h2>
     @if ($page->post_img)
       <img src="{{ $page->assets_prefix }}{{ $page->post_img }}" alt="{{ $page->post_img_alt }}">
     @endif
     @yield('content')
-  </div>
 @endsection

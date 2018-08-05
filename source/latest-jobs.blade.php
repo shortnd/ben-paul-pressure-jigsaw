@@ -1,15 +1,26 @@
-@extends('_layouts.site')
+@extends('_layouts.inner')
 @section('body')
-  <div class="container">
-    <ul>
-      @forelse ($latest_jobs as $latest_job)
-        <li>
-          {{$latest_job->title}}
-          <a href="{{$latest_job->getPath()}}">View Job</a>
-        </li>
-      @empty
-        <h2 class="no-jobs">Currenly No Jobs Posted</h2>
-      @endforelse
-    </ul>
-  </div>
+  @forelse ($latest_jobs as $latest_job)
+    <div class="latest_job">
+      @if ($latest_job->before_pic && $latest_job->after_pic)
+        <div class="img-wrap">
+          <img src="{{ $page->assets_prefix }}{{ $latest_job->before_pic }}" alt="{{$latest_job->before_after_pic_desc}}"  />
+          <img src="{{ $page->assets_prefix}}{{ $latest_job->after_pic }}" alt="{{ $latest_job->before_after_pic_desc }}"/>
+        </div>
+      @endif
+      <div class="text">
+        <div class="title">
+          <h2>{{ $latest_job->title }}</h2>
+        </div><!--/.title-->
+        <div class="description">
+          <p>
+            {{ str_limit(strip_tags($latest_job->getContent()), $limit = 150, $end ="...") }}
+          </p>
+        </div>
+        <a href="{{ $latest_job->getPath()}}">View Service</a>
+      </div>
+    </div>
+  @empty
+    <h2>No {{$page->title}}</h2>
+  @endforelse
 @endsection

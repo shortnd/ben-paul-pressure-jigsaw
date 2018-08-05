@@ -136,9 +136,9 @@
 		$("#flyout >li:has(ul)").find("a:first").append('<i class="fa fa-angle-down toggle" tabindex="0">');
 
 		function addNavClass() {
-			if ($window.width() < 992) {
-				$("body").addClass('mobile');
-				$("body").removeClass('desktop');
+			if ($window.width() < 768) {
+				$("body").addClass('desktop');
+				$("body").removeClass('mobile');
 			} else{
 				$("body").addClass('mobile');
 				$("body").removeClass('desktop');
@@ -206,8 +206,13 @@
 		if(typeof $.fn.owlCarousel !== "undefined"){
 			// $("#owl-slider").owlCarousel();
 			var latestJobsLength = $('.latest-jobs .latest-job').length;
+			var latestServicesLength = $('.latest-services .service-card').length;
 			$('.latest-jobs').owlCarousel({
 				items: latestJobsLength > 3 ? 3 : latestJobsLength,
+				margin: 15,
+			});
+			$('.latest-services').owlCarousel({
+				items: latestServicesLength > 3 ? 3 : latestServicesLength,
 				margin: 15,
 			});
 		}

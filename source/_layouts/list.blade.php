@@ -1,6 +1,6 @@
 @extends('_layouts.inner')
 @section('body')
-  <h2 class="text-center">Services</h2>
+  @yield('content')
   @forelse ($services as $service)
     <div class="service">
       @if ($service->post_img)
@@ -14,13 +14,13 @@
         </div><!--/.title-->
         <div class="description">
           <p>
-            {{ str_limit(strip_tags($service->getContent()), $limit = 75, $end ="...") }}
+            {{ str_limit(strip_tags($service->getContent()), $limit = 150, $end ="...") }}
           </p>
         </div>
         <a href="{{ $service->getPath()}}">View Service</a>
       </div>
     </div>
   @empty
-    <h2>No Services</h2>
+    <h2>No {{$page->title}}</h2>
   @endforelse
 @endsection
