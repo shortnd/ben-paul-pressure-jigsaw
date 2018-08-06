@@ -51,12 +51,12 @@
     },
     methods: {
       show: function () {
-        if (this.showEstimate === false) {
-          this.showEstimate = true
-          this.message = 'Hide Estimate Calculator -'
-        } else {
+        if (this.showEstimate) {
           this.showEstimate = false
           this.message = 'Show Estimate Calculator +'
+        } else {
+          this.showEstimate = true
+          this.message = 'Hide Estimate Calculator -'
         }
       },
       round: function(value) {

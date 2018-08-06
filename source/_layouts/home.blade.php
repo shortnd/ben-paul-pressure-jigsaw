@@ -58,12 +58,12 @@
               <h3>{{$latest_job->title}}</h3>
               <p>{{ str_limit($latest_job->description, $limit = 100, $end = '...') }}</p>
               <a href="{{$latest_job->getPath()}}">Read More</a>
-            </div>
-          </div>
+            </div><!--/.text.clearfix-->
+          </div><!--/.latest-job-->
         @empty
           <h3>There are currently no jobs posted</h3>
         @endforelse
-      </div>
+      </div><!--/.latest-job-->
       <div class="text-center">
         <a href="/latest-jobs" class="btn">View All Jobs</a>
       </div><!--/.text-center-->
@@ -73,7 +73,7 @@
     <div class="container">
       <h2 class="text-center">Latest Services</h2>
       <div class="latest-services">
-        @forelse ($services as $service)
+        @forelse ($services->slice(0, 3) as $service)
           <div class="service-card">
             @if ($service->post_img)
               <div class="card-img" style="background:url('{{$page->assets_prefix}}{{$service->post_img}}') center no-repeat;background-size:cover;"></div>
@@ -84,13 +84,14 @@
               <a href="{{$service->getPath()}}">View {{$service->title}} Service</a>
             </div><!--/.text-->
           </div><!--/.service-card-->
+          <div class="text-center">
+            <a class="btn" href="/services">View All Services</a>
+          </div><!--/.text-center-->
         @empty
           <h3>There are currently no services posted</h3>
         @endforelse
       </div><!--/.latest-services-->
-      <div class="text-center">
-        <a class="btn" href="/services">View All Services</a>
-      </div><!--/.text-center-->
+
     </div><!--/.container-->
   </section><!--/.latest-services-->
 </main>

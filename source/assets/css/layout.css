@@ -782,6 +782,7 @@ footer a {
 #contact #estimate span {
   display: block;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 #contact #estimate .show {
