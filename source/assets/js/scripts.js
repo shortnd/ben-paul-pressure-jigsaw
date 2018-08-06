@@ -136,6 +136,7 @@
 			$('.latest-services').owlCarousel({
 				items: latestServicesLength > 3 ? 3 : latestServicesLength,
 				margin: 15,
+				// stagePadding: 15,
 				responsive: {
 					991: {
 						items: latestServicesLength > 3 ? 3 : latestServicesLength,

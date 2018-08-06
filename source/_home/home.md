@@ -1,5 +1,5 @@
 ---
-permalink: /home/index.html
+permalink: index.html
 extends: _layouts.home
 slide_caption: Benjamin Pauls Pressure Washing
 slide_sub_caption: Servicing St. Clair Shore, Grosse Point, Harper Woods, Sterling Heights and More...
