@@ -1,8 +1,6 @@
----
-title: Contact
----
 @extends('_layouts.inner')
 @section('body')
+  @yield('content')
   <form id="contact">
     <div class="form-group">
       <label for="name">Name</label>
