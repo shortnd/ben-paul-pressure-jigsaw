@@ -2,10 +2,9 @@
 @section('body')
   @forelse ($latest_jobs as $latest_job)
     <div class="latest_job">
-      @if ($latest_job->before_pic && $latest_job->after_pic)
+      @if ($latest_job->before_after_pic)
         <div class="img-wrap">
-          <img src="{{ $page->assets_prefix }}{{ $latest_job->before_pic }}" alt="{{$latest_job->before_after_pic_desc}}"  />
-          <img src="{{ $page->assets_prefix}}{{ $latest_job->after_pic }}" alt="{{ $latest_job->before_after_pic_desc }}"/>
+          <div style="background:url('{{ $page->assets_prefix }}{{ $latest_job->before_after_pic }}') center no-repeat;background-size:cover"></div>
         </div>
       @endif
       <div class="text">

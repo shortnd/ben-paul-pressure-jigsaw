@@ -52,8 +52,7 @@
         @forelse ($latest_jobs->slice(0, 3) as $latest_job)
           <div class="latest-job">
             <div class="before-after-imgs clearfix">
-              <div class="img" style="background:url('{{ $page->assets_prefix }}{{ $latest_job->before_pic }}') center no-repeat; background-size:cover"></div>
-              <div class="img" style="background:url('{{ $page->assets_prefix }}{{ $latest_job->after_pic }}') center no-repeat; background-size:cover"></div>
+              <div class="img" style="background:url('{{ $page->assets_prefix }}{{ $latest_job->before_after_pic }}') center no-repeat; background-size:cover"></div>
             </div><!--/.before-after-imgs.clearfix-->
             <div class="text clearfix">
               <h3>{{$latest_job->title}}</h3>

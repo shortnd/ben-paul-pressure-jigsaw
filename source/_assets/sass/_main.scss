@@ -125,8 +125,6 @@ footer {
   margin-right: 15px;
   background: #fff;
   .img {
-    float:left;
-    width:50%;
     height:200px;
     border-radius: 4px 4px 0 0;
   }
@@ -201,13 +199,13 @@ footer {
   padding: 15px;
   margin-bottom: 15px;
   .img-wrap {
-    display:flex;
-    flex: 1;
     height: 200px;
     padding-right: 15px;
-    img {
+    div {
+      display: block;
       margin: 0!important;
-      width:50%;
+      height:100%;
+      width: 250px;
     }
   }
   .text {
@@ -244,7 +242,6 @@ footer {
   flex-wrap: wrap;
   img {
     flex:1;
-    margin: 0;
   }
 }
 
