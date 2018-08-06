@@ -1,3 +1,6 @@
+---
+title: Latest Jobs
+---
 @extends('_layouts.inner')
 @section('body')
   @forelse ($latest_jobs as $latest_job)
