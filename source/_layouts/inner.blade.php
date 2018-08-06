@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Benjamin Paul Pressure Washing</title>
+        <title>{{ $page->title }} | Benjamin Paul Pressure Washing</title>
+        <meta name="description" content="{{ $page->description}}">
         <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
@@ -35,8 +36,8 @@
         </div>
         @include('_components.footer')
         <script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
-<script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
+        <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="/assets/js/scripts.js"></script>
     </body>
 </html>
