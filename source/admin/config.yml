@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: shortnd/ben-paul-pressure-jigsaw
+  name: git-gateway
   branch: master
 
 publish_mode: editorial_workflow
