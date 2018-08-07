@@ -10,7 +10,7 @@ public_foler: "/assets/images"
 collections:
   - name: "services"
     label: "Service"
-    folder: "/_services"
+    folder: "source/_services"
     create: true
     slug: "{{slug}}"
     fields:
