@@ -2,10 +2,9 @@
 @section('body')
   <h3>{{$page->date}}</h3>
   <hr />
-  @if ($page->before_pic && $page->after_pic)
+  @if ($page->before_after_pic)
     <div class="before-and-after">
-      <img src="{{ $page->assets_prefix }}{{$page->before_pic}}" alt="{{$page->before_after_pic_desc}}">
-      <img src="{{ $page->assets_prefix }}{{$page->after_pic}}" alt="{{$page->before_after_pic_desc}}" />
+      <img src="{{ $page->assets_prefix }}{{$page->before_after_pic}}" alt="{{$page->before_after_pic_desc}}">
     </div><!--/.before-and-after-->
   @endif
   @yield('content')

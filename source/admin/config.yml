@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: netlify-cms
+
+publish_mode: editorial_workflow
+
+media_folder: "source/assets/images"
+public_foler: "/assets/images"
+
+collections:
+  - name: "services"
+    label: "Services"
+    folder: "_services"
+    create: true
+    slug: {{slug}}
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "_layouts.service"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Sequence", name: "sequence", required: false, widget: "number"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Content", name: "content", widget: "markdown"}

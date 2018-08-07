@@ -13,7 +13,8 @@ return [
         'sort' => 'sequence'
       ],
       'home',
-      'service'
+      'service',
+      'contact'
     ],
     'email' => 'email@email.com',
     'telephone' => '313-313-3311',

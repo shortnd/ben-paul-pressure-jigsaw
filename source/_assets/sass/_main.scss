@@ -95,6 +95,7 @@ footer {
 }
 .latest-jobs-before-and-afters {
   padding: 30px 0 30px;
+  margin-bottom: 30px;
   background: $blue-lightest;
   h2 {
     text-transform: uppercase;
@@ -124,8 +125,6 @@ footer {
   margin-right: 15px;
   background: #fff;
   .img {
-    float:left;
-    width:50%;
     height:200px;
     border-radius: 4px 4px 0 0;
   }
@@ -150,6 +149,7 @@ footer {
 
 .latest-services-wrap {
   padding: 30px 0;
+  background: $blue-lightest;
   h2 {
     text-transform: uppercase;
     font-weight: 600;
@@ -163,9 +163,8 @@ footer {
     flex-direction: column;
     flex: 1;
     background:#fff;
-    box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, .2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08);
     border-radius: 3px;
-    border: 1px solid rgba(0,0, 0, .2);
     .card-img {
       height: 150px;
     }
@@ -200,13 +199,13 @@ footer {
   padding: 15px;
   margin-bottom: 15px;
   .img-wrap {
-    display:flex;
-    flex: 1;
     height: 200px;
     padding-right: 15px;
-    img {
+    div {
+      display: block;
       margin: 0!important;
-      width:50%;
+      height:100%;
+      width: 250px;
     }
   }
   .text {
@@ -234,7 +233,7 @@ footer {
     float:right;
   }
 }
-#main {
+#inner #main {
   padding-bottom: 60px;
 }
 
@@ -243,7 +242,6 @@ footer {
   flex-wrap: wrap;
   img {
     flex:1;
-    margin: 0;
   }
 }
 
@@ -347,6 +345,7 @@ footer {
     span {
       display:block;
       margin-bottom: 10px;
+      cursor: pointer;
     }
     .show {
       color: $red-dark;

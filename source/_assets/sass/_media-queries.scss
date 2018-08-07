@@ -73,6 +73,21 @@ $mobile-portrait: 479px;
     }
   }
   }
+  @media only screen and (max-width:620px){
+    .latest_job {
+      flex-direction: column;
+      .img-wrap {
+        height: 200px;
+        display:block;
+        div {
+          display: block;
+          margin: 0!important;
+          height:100%;
+          width: 250px;
+        }
+      }
+    }
+  }
   /*! Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
   @media only screen and (max-width:$mobile-portrait){
   /*! Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
