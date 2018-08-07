@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="{{ mix('css/layout.css', 'assets')}}">
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
     <body>
   @include('_components.headerAndNav')

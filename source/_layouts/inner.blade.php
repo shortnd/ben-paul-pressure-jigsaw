@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="/assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
         <link rel="stylesheet" href="/assets/css/layout.css">
         <script src="/assets/js/main.js"></script>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
     <body id="inner">
         @include('_components.headerAndNav')
