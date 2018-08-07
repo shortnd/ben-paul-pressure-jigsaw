@@ -42,5 +42,16 @@
         <script src="/assets/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
         <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="/assets/js/scripts.js"></script>
+        <script>
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                  document.location.href = "/admin/";
+                });
+              }
+            });
+          }
+        </script>
     </body>
 </html>
