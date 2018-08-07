@@ -12,7 +12,7 @@ collections:
     label: "Services"
     folder: "_services"
     create: true
-    slug: {{slug}}
+    slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "_layouts.service"}
       - {label: "Title", name: "title", widget: "string"}
