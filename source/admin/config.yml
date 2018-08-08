@@ -24,7 +24,6 @@ collections:
     label: 'Home'
     folder: 'source/_home'
     create: false
-    slug: "{{slug}}"
     fields:
       - {label: 'Layout', name: "extends", widget: "hidden", default: "_layouts.home"}
       - {label: 'Title', name: 'title', widget: 'hidden'}
