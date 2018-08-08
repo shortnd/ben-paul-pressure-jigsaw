@@ -10,12 +10,12 @@ public_foler: "/assets/images"
 collections:
   - name: "services"
     label: "Service"
-    folder: "_services"
+    folder: "source/_services"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "_layouts.service"}
+      - {label: "Layout", name: "extends", widget: "hidden", default: "_layouts.service"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sequence", name: "sequence", required: false, widget: "number"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Content", name: "content", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
