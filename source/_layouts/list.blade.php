@@ -17,7 +17,7 @@
             {{ str_limit(strip_tags($service->getContent()), $limit = 150, $end ="...") }}
           </p>
         </div>
-        <a href="{{ $service->getPath()}}">View Service</a>
+        <a href="{{$service->getPath()}}">View Service</a>
       </div>
     </div>
   @empty

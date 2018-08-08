@@ -19,7 +19,7 @@ title: Latest Jobs
             {{ str_limit(strip_tags($latest_job->getContent()), $limit = 150, $end ="...") }}
           </p>
         </div>
-        <a href="{{ $latest_job->getPath()}}">View Service</a>
+        <a href="{{ $latest_job->getPath()}}">View Job</a>
       </div>
     </div>
   @empty
