@@ -17,7 +17,7 @@
   <section id="slider">
     <ul class="bxslider">
       @foreach ($page->slides as $slide)
-        <li style="background:url('{{$page->assets_prefix}}{{ $slide }}') center no-repeat;background-size:cover"></li>
+        <li style="background:url('{{ $slide }}') center no-repeat;background-size:cover"></li>
       @endforeach
     </ul>
     <div class="slider-caption">
@@ -53,7 +53,7 @@
         @forelse ($latest_jobs->slice(0, 3) as $latest_job)
           <div class="latest-job">
             <div class="before-after-imgs clearfix">
-              <div class="img" style="background:url('{{ $page->assets_prefix }}{{ $latest_job->before_after_pic }}') center no-repeat; background-size:cover"></div>
+              <div class="img" style="background:url('{{ $latest_job->before_after_pic }}') center no-repeat; background-size:cover"></div>
             </div><!--/.before-after-imgs.clearfix-->
             <div class="text clearfix">
               <h3>{{$latest_job->title}}</h3>
@@ -77,7 +77,7 @@
         @forelse ($services->slice(0, 3) as $service)
           <div class="service-card">
             @if ($service->post_img)
-              <div class="card-img" style="background:url('{{$page->assets_prefix}}{{$service->post_img}}') center no-repeat;background-size:cover;"></div>
+              <div class="card-img" style="background:url('{{$service->post_img}}') center no-repeat;background-size:cover;"></div>
             @endif
             <div class="text">
               <h3>{{ $service->title }}</h3>
