@@ -24,15 +24,3 @@ collections:
     label: 'Home'
     folder: 'source/_home'
     create: false
-    fields:
-      - {label: 'Layout', name: "extends", widget: "hidden", default: "_layouts.home"}
-      - {label: 'Title', name: 'title', widget: 'hidden'}
-      - {label: 'Description', name: "description", widget: "text"}
-      - {label: 'Slider Main Caption', name: "slider_caption", widget: 'string'}
-      - {label: 'Slider Sub Caption', name: "slider_sub_caption", widget: 'string'}
-      - {label: 'Mission Statement', name: 'mission_statement', widget: 'text'}
-      - label: 'Slides'
-        name: 'slides'
-        widget: 'list'
-        fields:
-          - {label: 'Slide', name: 'slide', widget: 'image'}
