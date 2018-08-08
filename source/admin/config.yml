@@ -33,5 +33,5 @@ collections:
       - {label: 'Mission Statement', name: 'mission_statement', widget: 'text'}
       - Label: 'Slides'
         name: 'slides'
-        wiget: 'list'
+        widget: 'list'
         - {label: 'Slide', name: 'slide', widget: 'image'}
