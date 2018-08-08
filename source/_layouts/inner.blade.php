@@ -7,7 +7,7 @@
         <title>
           @if ($page->title){{ $page->title }} |@endif Benjamin Paul Pressure Washing
         </title>
-        <meta name="description" content="{{ $page->description}}">
+        <meta name="description" content="{{$page->description}}">
         <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/assets/plugins/owl.carousel/owl-carousel/owl.carousel.css">
@@ -21,7 +21,7 @@
           <ul class="bxslider">
             @if ($page->slides)
               @foreach ($page->slides as $slide)
-                <li style="background:url('{{$page->assets_prefix}}{{ $slide }}') center no-repeat;background-size:cover"></li>
+                <li style="background:url('{{ $slide }}') center no-repeat;background-size:cover"></li>
               @endforeach
             @endif
           </ul>
@@ -42,16 +42,5 @@
         <script src="/assets/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
         <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="/assets/js/scripts.js"></script>
-        <script>
-          if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-              if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                  document.location.href = "/admin/";
-                });
-              }
-            });
-          }
-        </script>
     </body>
 </html>

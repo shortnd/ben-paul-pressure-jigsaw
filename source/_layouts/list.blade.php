@@ -5,7 +5,7 @@
     <div class="service">
       @if ($service->post_img)
         <div class="img-wrap">
-          <img src="{{ $page->assets_prefix }}{{$service->post_img}}" alt="{{$service->post_img_alt}}"  />
+          <img src="{{$service->post_img}}" alt="{{$service->post_img_alt}}"  />
         </div>
       @endif
       <div class="about-service">
