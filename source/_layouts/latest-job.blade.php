@@ -4,7 +4,7 @@
   <hr />
   @if ($page->before_after_pic)
     <div class="before-and-after">
-      <img src="{{$page->before_after_pic}}" alt="{{$page->before_after_pic_desc}}">
+      <img src="{{$page->asset_prefix}}{{$page->before_after_pic}}" alt="{{$page->before_after_pic_desc}}">
     </div><!--/.before-and-after-->
   @endif
   @yield('content')
