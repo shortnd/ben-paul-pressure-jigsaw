@@ -20,3 +20,18 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Post Img", name: "post_img", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: 'home'
+    label: 'Home'
+    folder: 'source/_home'
+    create: false
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Layout', name: "extends", widget: "hidden", default: "_layouts.home"}
+      - {label: 'Description', name: "description", widget: "text"}
+      - {label: 'Slider Main Caption', name: "slider_caption", widget: 'string'}
+      - {label: 'Slider Sub Caption', name: "slider_sub_caption", widget: 'string'}
+      - {label: 'Mission Statement', name: 'mission_statement', widget: 'text'}
+      - Label: 'Slides'
+        name: 'slides'
+        wiget: 'list'
+        - {label: 'Slide', name: 'slide', widget: 'image'}
