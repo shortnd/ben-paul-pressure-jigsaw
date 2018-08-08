@@ -18,4 +18,5 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sequence", name: "sequence", required: false, widget: "number"}
       - {label: "Description", name: "description", widget: "text"}
+      - {label: "Post Img", name: "post_img", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
