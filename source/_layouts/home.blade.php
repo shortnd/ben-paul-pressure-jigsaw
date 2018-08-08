@@ -85,14 +85,15 @@
               <a href="{{$service->getPath()}}">View {{$service->title}} Service</a>
             </div><!--/.text-->
           </div><!--/.service-card-->
-          <div class="text-center">
-            <a class="btn" href="/services">View All Services</a>
-          </div><!--/.text-center-->
         @empty
           <h3>There are currently no services posted</h3>
         @endforelse
       </div><!--/.latest-services-->
-
+      @if ($services)
+        <div class="text-center">
+          <a class="btn" href="/services">View All Services</a>
+        </div><!--/.text-center-->
+      @endif
     </div><!--/.container-->
   </section><!--/.latest-services-->
 </main>
