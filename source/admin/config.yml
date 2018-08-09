@@ -8,6 +8,36 @@ media_folder: "source/assets/images"
 public_folder: "assets/images"
 
 collections:
+  - name: 'Home'
+    label: 'Home Page'
+    folder: 'source/_home'
+    fields:
+      - {label: 'Title', name: 'title', widget: 'hidden', default: ''}
+      - {label: 'Permalink', name: 'permalink', widget: 'hidden', default: 'index.html'}
+      - {label: 'Extends', name: 'extends', widget: 'hidden', default: '_layouts.home'}
+      - {label: 'Page Description', name: 'description', widget: 'text'}
+      - {label: 'Slider Caption', name: 'slide_caption', widget: 'string'}
+      - {label: 'Slider Sub Caption', name: 'slide_sub_caption', widget: 'string'}
+      - {label: 'Mission Statement', name: 'mission_statement', widget: 'text'}
+      - label: 'Slides'
+        name: 'slides'
+        widget: 'list'
+        required: false
+        field:
+          - {label: 'slide', name: 'slide', widget: 'image'}
+#      - {label: "Title", name: "title", widget: "hidden", default: ""}
+#      - {label: "Permalink", name: "permalink", widget: "hidden", default: "index.html" }
+#      - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.home" }
+#      - {label: "Description", name: "description", widget: "string" }
+#      - {label: "Slide Caption", name: "slide_caption", widget: "string" }
+#      - {label: "Slide Sub Caption", name: "slide_sub_caption", widget: "string" }
+#      - {label: "Mission Statement", name: "mission_statement", widget: "string" }
+#      - label: "Slides"
+#        name: "slides"
+#        widget: "list"
+#        required: false
+#        field:
+#          - { label: "Slide", name: "slide", widget: "image" }
   - name: "services"
     label: "Service"
     folder: "source/_services"
@@ -20,21 +50,3 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Post Img", name: "post_img", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-
-  - name: 'Home'
-    label: 'Home Page'
-    folder: 'source/_home'
-    fields:
-      - {label: "Title", name: "title", widget: "hidden", default: ""}
-      - {label: "Permalink", name: "permalink", widget: "hidden", default: "index.html" }
-      - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.home" }
-      - {label: "Description", name: "description", widget: "string" }
-      - {label: "Slide Caption", name: "slide_caption", widget: "string" }
-      - {label: "Slide Sub Caption", name: "slide_sub_caption", widget: "string" }
-      - {label: "Mission Statement", name: "mission_statement", widget: "string" }
-      - label: "Slides"
-        name: "slides"
-        widget: "list"
-        required: false
-        field:
-          - { label: "Slide", name: "slide", widget: "image" }
