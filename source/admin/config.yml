@@ -32,4 +32,4 @@ collections:
         name: slides
         widget: list
         field:
-          -{label: Slide, name: slide, widget: image}
+          - {label: Slide, name: slide, widget: image }
