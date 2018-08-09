@@ -34,5 +34,6 @@ collections:
       - label: "Slides"
         name: "slides"
         widget: "list"
+        optional: true
         field:
-          - { label: "Slide", widget: "image", required: false }
+          - { label: "Slide", widget: "image", optional: false }
