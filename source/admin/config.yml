@@ -22,7 +22,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - label: 'Home Page'
     name: 'Home'
-    file: 'source/_home/home.md'
+    file: 'source/_home/home'
     fields:
       - {label: Description, name: Description, widget: text}
       - {label: Slide Caption, name: slide_caption, widget: string}
