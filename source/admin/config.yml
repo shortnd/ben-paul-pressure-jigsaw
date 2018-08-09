@@ -23,7 +23,6 @@ collections:
   - label: 'Home Page'
     name: 'Home'
     folder: 'source/_home'
-    create: false
     fields:
       - {label: Description, name: Description, widget: text}
       - {label: Slide Caption, name: slide_caption, widget: string}
