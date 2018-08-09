@@ -1,5 +1,7 @@
 ---
+title: 
 permalink: index.html
+extends: _layouts.home
 description:
   Benjamin Paul's Pressure Washing. Servicing St. Clair Shore, Grosse Point,
   Harper Woods, Sterling Heights and More.

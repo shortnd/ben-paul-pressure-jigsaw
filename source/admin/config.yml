@@ -24,7 +24,9 @@ collections:
     label: 'Home Page'
     folder: 'source/_home'
     fields:
-      - {label: "Title", name: "title", widget: "hidden"}
+      - {label: "Title", name: "title", widget: "hidden", default: ""}
+      - {label: "Permalink", name:"permalink", widget: "hidden", default: "index.html" }
+      - {labe: "Extends", name: "extends", widget: "hidden", default: "_layouts.home" }
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Slide Caption", name: "slide_caption", widget: "string"}
       - {label: "Slide Sub Caption", name: "slide_sub_caption", widget: "string"}
