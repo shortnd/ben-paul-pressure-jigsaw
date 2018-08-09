@@ -16,7 +16,7 @@ collections:
     fields:
       - {label: "Layout", name: "extends", widget: "hidden", default: "_layouts.service"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Sequence", name: "sequence", required: false, widget: "number"}
+      - {label: "Sequence", name: "sequence", required: false, widget: "number", default: "0"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Post Img", name: "post_img", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
@@ -36,4 +36,4 @@ collections:
         widget: "list"
         required: false
         field:
-          - { label: "Slide", name: "slide" widget: "image", required: false }
+          - { label: "Slide", name: "slide" widget: "image" }
