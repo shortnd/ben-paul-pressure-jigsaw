@@ -26,7 +26,7 @@ collections:
     folder: 'source/_home'
     fields:
       - {label: "Title", name: "title", widget: "hidden", default: ""}
-      - {label: "Permalink", name:"permalink", widget: "hidden", default: "index.html" }
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "index.html" }
       - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.home" }
       - {label: "Description", name: "description", widget: "string" }
       - {label: "Slide Caption", name: "slide_caption", widget: "string" }
