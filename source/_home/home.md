@@ -1,5 +1,5 @@
 ---
-title: 
+title:
 permalink: index.html
 extends: _layouts.home
 description:
@@ -15,6 +15,4 @@ mission_statement:
   inventore nihil. Ullam totam sit eum tempore quae sunt dolores, consectetur
   quisquam
 slides:
-  - assets/images/slide-1.jpg
-  - assets/images/slide-1.jpg
 ---
