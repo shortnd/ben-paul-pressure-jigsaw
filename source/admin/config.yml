@@ -11,7 +11,6 @@ collections:
   - name: 'Pages'
     label: 'pages'
     delete: false
-    folder: "source/_pages"
     files:
       - file: "source/_page/home.md"
         label: "home"
