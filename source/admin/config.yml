@@ -14,7 +14,7 @@ collections:
     folder: "source/_pages"
     files:
       - file: "source/_page/home.md"
-        label: "Home"
+        label: "home"
         name: "home"
         fields:
           - {label: 'Title', name: 'title', widget: 'hidden', default: ''}
