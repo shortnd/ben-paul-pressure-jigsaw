@@ -8,6 +8,7 @@ return [
       'latest_jobs' => [
         'sort' => '-date'
       ],
+      'pages',
       'about',
       'services' => [
         'sort' => 'sequence'
