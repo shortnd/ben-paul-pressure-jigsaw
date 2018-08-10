@@ -12,7 +12,7 @@ collections:
     label: 'pages'
     delete: false
     files:
-      - file: "source/_page/home.md"
+      - file: "source/_pages/home.md"
         label: "home"
         name: "home"
         fields:
