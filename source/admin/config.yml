@@ -27,7 +27,7 @@ collections:
             name: 'slides'
             widget: 'list'
             feild:
-              - {label: 'Slide', name: 'slide', widget: 'image', required: false}
+              - {label: 'Slides', name: 'slides', widget: 'image', required: false}
 
   - name: "services"
     label: "Services"
