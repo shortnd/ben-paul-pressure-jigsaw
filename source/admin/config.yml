@@ -30,7 +30,7 @@ collections:
             feild:
               - {label: 'slide', widget: 'image', required: false}
 
-  - name: About
+  - name: 'About'
     label: 'About'
     delete: false
     files:
@@ -40,6 +40,7 @@ collections:
         fields:
           - {label: 'Title', name: 'title', widget: 'hidden'}
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
+          - {label: 'Permalink', name: 'permalink', widget: 'hidden'}
           - {label: 'Section', name: 'section', widget: 'hidden'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
 
