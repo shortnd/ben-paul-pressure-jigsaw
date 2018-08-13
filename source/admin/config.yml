@@ -34,14 +34,14 @@ collections:
     label: 'About'
     delete: false
     files:
-      -file: 'source/_about/about.md'
-      lable: 'About'
-      name: 'about'
-      fields:
-        - {label: 'Title', name: 'title', widget: 'hidden'}
-        - {label: 'Extends', name: 'extends', widget: 'hidden'}
-        - {label: 'Section', name: 'section', widget: 'hidden'}
-        - {label: 'Body', name: 'body', widget: 'markdown'}
+      - file: 'source/_about/about.md'
+        lable: 'About'
+        name: 'about'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'hidden'}
+          - {label: 'Extends', name: 'extends', widget: 'hidden'}
+          - {label: 'Section', name: 'section', widget: 'hidden'}
+          - {label: 'Body', name: 'body', widget: 'markdown'}
 
   - name: "services"
     label: "Services"
