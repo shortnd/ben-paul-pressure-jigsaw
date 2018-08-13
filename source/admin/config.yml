@@ -28,7 +28,20 @@ collections:
             widget: 'list'
             required: false
             feild:
-              - {label: 'Slides', name: 'slides', widget: 'image', required: false}
+              - {label: 'slide', widget: 'image', required: false}
+
+  - name: About
+    label: 'About'
+    delete: false
+    files:
+      -file: 'source/_about/about.md'
+      lable: 'About'
+      name: 'about'
+      fields:
+        - {label: 'Title', name: 'title', widget: 'hidden'}
+        - {label: 'Extends', name: 'extends', widget: 'hidden'}
+        - {label: 'Section', name: 'section', widget: 'hidden'}
+        - {label: 'Body', name: 'body', widget: 'markdown'}
 
   - name: "services"
     label: "Services"

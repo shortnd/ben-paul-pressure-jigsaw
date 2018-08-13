@@ -14,5 +14,5 @@ mission_statement: >-
   reprehenderit, tempora similique corporis ipsum? Expedita exercitationem
   inventore nihil. Ullam totam sit eum tempore quae sunt dolores, consectetur
   quisquam. Test 2
-slides: ['assets/images/slide-1.jpg']
+slides: ['assets/images/dirt.jpg']
 ---

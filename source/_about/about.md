@@ -3,8 +3,6 @@ extends: _layouts.about
 title: about
 section: body
 permalink: about/index.html
-slides:
-  -
 ---
 ## This is the about page
 
