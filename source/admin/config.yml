@@ -36,7 +36,7 @@ collections:
             name: 'meta'
             widget: 'object'
             feilds:
-              - {label: 'Page Description', name: 'page_description', widget: 'string'}
+              - {label: 'Page Description', name: 'page_description', widget: 'string', required: false}
           - {label: 'Body', name: 'body', widget: 'markdown'}
 
   - name: 'about'
