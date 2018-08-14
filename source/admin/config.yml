@@ -23,12 +23,7 @@ collections:
           - {label: 'Slider Caption', name: 'slide_caption', widget: 'string'}
           - {label: 'Slider Sub Caption', name: 'slide_sub_caption', widget: 'string'}
           - {label: 'Mission Statement', name: 'mission_statement', widget: 'text'}
-          - label: 'Slides'
-            name: 'slides'
-            widget: 'list'
-            required: false
-            feild:
-              - {widget: 'image', required: false}
+
       - file: "source/_pages/about.md"
         label: "About"
         name: "about"
@@ -40,7 +35,7 @@ collections:
           - label: 'Meta'
             name: 'meta'
             widget: 'object'
-            feild:
+            feilds:
               - {label: 'Page Description', name: 'page_description', widget: 'text'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
 
