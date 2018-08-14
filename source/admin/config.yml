@@ -13,7 +13,7 @@ collections:
     delete: false
     files:
       - file: "source/_pages/home.md"
-        label: "home"
+        label: "Home"
         name: "home"
         fields:
           - {label: 'Title', name: 'title', widget: 'hidden', default: ''}
@@ -29,8 +29,22 @@ collections:
             required: false
             feild:
               - {widget: 'image', required: false}
+      - file: "source/_pages/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {label: 'Title', name: 'title', widget: 'hidden'}
+          - {label: 'Extends', name: 'extends', widget: 'hidden'}
+          - {label: 'Permalink', name: 'permalink', widget: 'hidden'}
+          - {label: 'Section', name: 'section', widget: 'hidden'}
+          - label: 'Meta'
+            name: 'meta'
+            widget: 'object'
+            feild:
+              - {label: 'Page Description', name: 'page_description', widget: 'text'}
+          - {label: 'Body', name: 'body', widget: 'markdown'}
 
-  - name: 'About'
+  - name: 'about'
     label: 'About'
     delete: false
     files:
