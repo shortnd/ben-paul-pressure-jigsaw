@@ -28,7 +28,7 @@ collections:
             widget: 'list'
             required: false
             feild:
-              - {label: 'slide', widget: 'image', required: false}
+              - {widget: 'image', required: false}
 
   - name: 'About'
     label: 'About'
