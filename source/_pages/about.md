@@ -2,8 +2,6 @@
 title: About
 extends: _layouts.about
 permalink: about/index.html
-page_description: >-
-  This is the page description for the about page should be longer than 55 charaters but no more then 160
 section: body
 ---
 

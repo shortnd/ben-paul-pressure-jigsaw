@@ -32,11 +32,6 @@ collections:
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'Permalink', name: 'permalink', widget: 'hidden'}
           - {label: 'Section', name: 'section', widget: 'hidden'}
-          - label: 'Meta'
-            name: 'meta'
-            widget: 'object'
-            feilds:
-              - {label: 'Page Description', name: 'page_description', widget: 'string', required: false}
           - {label: 'Body', name: 'body', widget: 'markdown'}
 
   - name: 'about'
