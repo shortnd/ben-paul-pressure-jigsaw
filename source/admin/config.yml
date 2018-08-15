@@ -43,6 +43,16 @@ collections:
           - {label: 'Description', name: 'description', widget: 'text'}
           - {label: 'Title', name: 'title', widget: 'hidden'}
 
+      - file: "source/_pages/contact.md"
+        label: "Contact"
+        name: 'contact'
+        fields:
+          - {label: 'Permalink', name: 'permalink', widget: 'hidden'}
+          - {label: 'Extends', name: 'extends', widget: 'hidden'}
+          - {label: 'Title', name: 'title', widget: 'hidden'}
+          - {label: 'Description', name: 'description', widget: 'text'}
+          - {label: 'Section', name: 'section', widget: 'hidden'}
+
   - name: "services"
     label: "Services"
     folder: "source/_services"
