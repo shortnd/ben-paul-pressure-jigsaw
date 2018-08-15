@@ -75,6 +75,7 @@ collections:
     fields:
       - {label: 'Extends', name: 'extends', widget: 'hidden', default: '_layouts.latest-job'}
       - {label: 'Title', name: 'title', widget: 'string'}
+      - {lable: 'Date', name: 'date', widget: 'date', format: "MM DD YY"}
       - {label: 'Before and After Picture', name: 'before_after_pic', widget: 'image'}
       - {label: 'Before and After Alternative Text', name: 'before_after_pic_desc', widget: 'string'}
       - {label: 'Page Description', name: 'description', widget: 'text'}
