@@ -34,19 +34,14 @@ collections:
           - {label: 'Section', name: 'section', widget: 'hidden'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
 
-  - name: 'about'
-    label: 'About'
-    delete: false
-    files:
-      - file: 'source/_about/about.md'
-        lable: 'About'
-        name: 'about'
+      - file: "source/_pages/service.md"
+        label: "Service"
+        name: 'service'
         fields:
-          - {label: 'Title', name: 'title', widget: 'hidden'}
-          - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'Permalink', name: 'permalink', widget: 'hidden'}
-          - {label: 'Section', name: 'section', widget: 'hidden'}
-          - {label: 'Body', name: 'body', widget: 'markdown'}
+          - {label: 'Extends', name: 'extends', widget: 'hidden'}
+          - {label: 'Description', name: 'description', widget: 'text'}
+          - {label: 'Title', name: 'title', widget: 'hidden'}
 
   - name: "services"
     label: "Services"
