@@ -66,3 +66,17 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Post Img", name: "post_img", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: 'jobs'
+    label: 'Jobs'
+    folder: "source/_latest_jobs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: 'Extends', name: 'extends', widget: 'hidden', default: '_layouts.latest-job'}
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Before and After Picture', name: 'before_after_pic', widget: 'image'}
+      - {label: 'Before and After Alternative Text', name: 'before_after_pic_desc', widget: 'string'}
+      - {label: 'Page Description', name: 'description', widget: 'text'}
+      - {label: 'Section', name: 'section', widget: 'hidden', default: 'content'}
+      - {label: 'Body', name: 'body', widget: 'markdown'}
