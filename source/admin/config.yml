@@ -32,6 +32,12 @@ collections:
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'Permalink', name: 'permalink', widget: 'hidden'}
           - {label: 'Section', name: 'section', widget: 'hidden'}
+          - label: Slides
+            name: slides
+            widget: list
+            fields:
+              - {label: 'Slide', name: 'img', widget: 'image'}
+              - {label: 'Alt', name: 'alt', widget: 'string'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
 
       - file: "source/_pages/service.md"
