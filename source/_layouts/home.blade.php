@@ -17,7 +17,7 @@
   <section id="slider">
     <ul class="bxslider">
       @foreach ($page->slides as $slide)
-        <li style="background:url('{{ $slide }}') center no-repeat;background-size:cover"></li>
+        <li style="background:url('{{ $slide->img }}') center no-repeat;background-size:cover"></li>
       @endforeach
     </ul>
     <div class="slider-caption">

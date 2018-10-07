@@ -23,6 +23,9 @@ return [
     'percentage' => '.45',
     'highPercentage' => '.60',
     'slides' => [
-      'assets/images/slide-1.jpg'
+      [
+        'img' => 'assets/images/slide-1.jpg',
+        'alt' => 'first slide'
+      ]
     ],
 ];
