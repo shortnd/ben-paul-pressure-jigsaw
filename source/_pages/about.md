@@ -3,11 +3,7 @@ title: About
 extends: _layouts.about
 permalink: about/index.html
 section: body
-slides:
-  - alt: first slide
-    img: /assets/images/dirt.jpg
-  - alt: Second Slide
-    img: /assets/images/water-clean.jpg
+slides: []
 ---
 
 ## This is the about page
