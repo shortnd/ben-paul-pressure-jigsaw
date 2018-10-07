@@ -21,7 +21,7 @@
           <ul class="bxslider">
             @if ($page->slides)
               @foreach ($page->slides as $slide)
-                <li style="background:url('{{$page->assets_prefix}}{{ $slide->img }}') center no-repeat;background-size:cover"></li>
+                <li style="background:url('{{ $slide['img'] }}') center no-repeat;background-size:cover"></li>
               @endforeach
             @endif
           </ul>

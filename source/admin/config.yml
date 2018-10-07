@@ -35,6 +35,7 @@ collections:
           - label: Slides
             name: slides
             widget: list
+            required: false
             fields:
               - {label: 'Slide', name: 'img', widget: 'image'}
               - {label: 'Alt', name: 'alt', widget: 'string'}
