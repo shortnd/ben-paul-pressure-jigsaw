@@ -16,9 +16,11 @@
   @include('_components.headerAndNav')
   <section id="slider">
     <ul class="bxslider">
-      @foreach ($page->slides as $slide)
+      @if ($page->slides)
+        @foreach ($page->slides as $slide)
         <li style="background:url('{{ $slide->img }}') center no-repeat;background-size:cover"></li>
-      @endforeach
+        @endforeach
+      @endif
     </ul>
     <div class="slider-caption">
       <div class="container text-center">

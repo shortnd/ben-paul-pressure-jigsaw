@@ -20,6 +20,13 @@ collections:
           - {label: 'Permalink', name: 'permalink', widget: 'hidden', default: 'index.html'}
           - {label: 'Extends', name: 'extends', widget: 'hidden', default: '_layouts.home'}
           - {label: 'Page Description', name: 'description', widget: 'text'}
+          - label: Slides
+            name: slides
+            widget: list
+            required: false
+            fields:
+              - {label: 'Slide', name: 'img', widget: 'image'}
+              - {label: 'Alt', name: 'alt', widget: 'string'}
           - {label: 'Slider Caption', name: 'slide_caption', widget: 'string'}
           - {label: 'Slider Sub Caption', name: 'slide_sub_caption', widget: 'string'}
           - {label: 'Mission Statement', name: 'mission_statement', widget: 'text'}
@@ -47,6 +54,13 @@ collections:
         fields:
           - {label: 'Permalink', name: 'permalink', widget: 'hidden'}
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
+          - label: Slides
+            name: slides
+            widget: list
+            required: false
+            fields:
+              - {label: 'Slide', name: 'img', widget: 'image'}
+              - {label: 'Alt', name: 'alt', widget: 'string'}
           - {label: 'Description', name: 'description', widget: 'text'}
           - {label: 'Title', name: 'title', widget: 'hidden'}
 
@@ -57,6 +71,13 @@ collections:
           - {label: 'Permalink', name: 'permalink', widget: 'hidden'}
           - {label: 'Extends', name: 'extends', widget: 'hidden'}
           - {label: 'Title', name: 'title', widget: 'hidden'}
+          - label: Slides
+            name: slides
+            widget: list
+            required: false
+            fields:
+              - {label: 'Slide', name: 'img', widget: 'image'}
+              - {label: 'Alt', name: 'alt', widget: 'string'}
           - {label: 'Description', name: 'description', widget: 'text'}
           - {label: 'Section', name: 'section', widget: 'hidden'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
@@ -68,6 +89,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "extends", widget: "hidden", default: "_layouts.service"}
+      - label: Slides
+            name: slides
+            widget: list
+            required: false
+            fields:
+              - {label: 'Slide', name: 'img', widget: 'image'}
+              - {label: 'Alt', name: 'alt', widget: 'string'}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Sequence", name: "sequence", required: false, widget: "number", default: "0"}
       - {label: "Description", name: "description", widget: "text"}
@@ -81,6 +109,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: 'Extends', name: 'extends', widget: 'hidden', default: '_layouts.latest-job'}
+      - label: Slides
+            name: slides
+            widget: list
+            required: false
+            fields:
+              - {label: 'Slide', name: 'img', widget: 'image'}
+              - {label: 'Alt', name: 'alt', widget: 'string'}
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Date', name: 'date', widget: 'date', format: "MM DD YY"}
       - {label: 'Before and After Picture', name: 'before_after_pic', widget: 'image'}
