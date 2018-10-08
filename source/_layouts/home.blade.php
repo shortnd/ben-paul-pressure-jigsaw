@@ -31,6 +31,9 @@
     <div id="slider-overlay"></div>
   </section><!--/#slider-->
   <main id="main" tabindex="-1">
+    <form action="">
+      <input type="search" name="q" id="search-input" aria-label="Search" title="Search">
+    </form>
   <section class="mission-statement">
     <div class="container">
       <div class="row">
