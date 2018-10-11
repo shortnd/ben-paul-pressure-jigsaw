@@ -36,15 +36,17 @@
               <li>
                 <a href="/about">About</a>
               </li>
-              <li>
+              <li class="dropdown">
                 <a href="/services">Services</a>
-                <ul>
-                  @foreach ($services as $service)
-                    <li>
-                      <a href="{{$service->getPath()}}">{{$service->title}}</a>
-                    </li>
-                  @endforeach
-                </ul>
+                @if (count($services) > 0)
+                  <ul>
+                    @foreach ($services as $service)
+                      <li>
+                        <a href="{{$service->getPath()}}">{{$service->title}}</a>
+                      </li>
+                    @endforeach
+                  </ul>
+                @endif
               </li>
               <li>
                 <a href="/contact">Contact</a>
